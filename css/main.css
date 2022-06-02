@@ -1,0 +1,1027 @@
+.alert{
+    font-size:14px;
+    padding: 25px 0;
+    background-color: #ECF5EB;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+.alert .container{
+    display: flex;
+    align-items: center;
+}
+.alert-icon{
+    margin-right: 14px;
+}
+.alert p{
+    flex: 1;
+    margin-bottom: 0;
+}
+.alert a{
+    color: #000;
+    font-weight: bold;
+}
+@media screen and (max-width: 992px){
+    .alert{
+        font-size:12px;
+        padding: 18px 0;
+    }    
+}
+/* header */
+#sec-header{
+    height: 812px;
+    position: relative;
+    overflow: hidden;
+}
+.background-img{
+    background-image:url("https://www.careem.com/pubweb-v2/super-app-v2/img/promo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 812px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    animation: zoom-img-header 5s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes zoom-img-header {
+    to{
+        transform: scale(1.1, 1.1);
+    }
+}
+#sec-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.logo-img{
+    width: 154px;
+    margin-left: 70px;
+    display: flex;
+}
+.logo-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.button{
+    text-decoration: none;
+}
+.btn-login{
+    background-color: #499d3a;
+    border-color: #499d3a;
+    color: #fff !important;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:1.5em;
+    align-items: center;
+    display: inline-flex;
+}
+.btn-login:hover{
+    background-color: rgb(2, 83, 2);
+    color:#fff;
+}
+.btn-signup{
+    background-color: #fff;
+    color: #499d3a !important;
+    border-color: #fff;
+    height: 42px;
+    margin-left: 3px;
+    align-items: center;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:1.5em;
+}
+.btn-signup:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.897)
+}
+
+.btn-menu-toggle{
+    position: absolute;
+    left: 0;
+}
+.content-info{
+    margin-top: 160px;
+}
+.ani-toLeft{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: moveToRight 1s forwards;
+}
+.content-header{
+    color: white;
+    font-size: 18px;
+    width: 400px;
+    height: 81px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: moveToRight 1s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes moveToRight { 
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.btn-app{
+    display:flex;
+}
+.btn-app a{
+    margin-right: 10px;
+    transform:translateY(20px);
+    opacity: 0;
+    animation: stagger 1s forwards;
+    animation-delay: 1s;
+}
+.btn-app a:first-child{
+    animation-delay: 0.33s;
+}
+.btn-app a:nth-child(2){
+    animation-delay: 0.66s;
+}
+.btn-app a:nth-child(3){
+    animation-delay: 0.99s;
+}
+@keyframes stagger {  
+    to{
+        transform:translateY(0);
+        opacity: 1;
+    }    
+}
+.appear-respone{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    #sec-header{
+        height: 313px;
+    }
+    .logo-img{
+        width: 92px;
+        margin: 0;
+    }
+    .btn-app{
+        display: none;
+    }
+    .btn-login{
+        height:33px;
+        width: auto;
+    }
+    .btn-login span{
+        display: none;
+    }
+    .btn-signup{
+        height:33px;
+        width: auto;
+    }
+    .content-info{
+        background-color: #F2F5F8;
+    }
+    .background-img{
+        height: 313px;
+    }
+    .btn-menu-toggle{
+        right: 0;
+        left: auto;
+    }
+    .login-sign{
+        padding-right: 45px;
+    }
+    .content-info{
+        display: none;
+    }
+    .appear-respone{
+        display: block;
+        padding: 30px;
+        margin: -20px 20px 20px 20px;
+        background-color: #F2F5F8;
+    }
+    .appear-respone h1{
+        text-align: center;
+        color: #000;
+        font-size: 32px;
+    }
+    .appear-respone p{
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+        width: 100%;
+    }
+    .btn-app_appear{
+        display: flex;
+        justify-content: center;
+    }
+
+}@media screen and (max-width: 424px){
+    .btn-signup span{
+        display: none;
+    }
+    .login-sign{
+        display: flex;
+    }
+}
+
+/* service */
+.group-product{
+    background-color:#F2F5F8;
+    padding: 140px 0;
+    margin-bottom: 90px;
+}
+.product-title{
+    text-align: center;
+    font-size:39px;
+    font-weight: bold;
+    margin-bottom: 54px;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.reveal.active .product-title{
+    animation: title-toRight 1s forwards;
+}
+@keyframes title-toRight {  
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.product-display{
+    margin-bottom: 30px;
+    width: 255px;
+    height: 190px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 50px #ccc;
+    opacity: 0;
+    transform: scale(0.7)
+}
+.reveal.active .product-display{
+    animation: appear 2s forwards;
+}
+.product-display:first-child{
+    animation-delay: 0.12s;
+}
+.product-display:nth-child(2){
+    animation-delay: 0.24s;
+}
+.product-display:nth-child(3){
+    animation-delay: 0.48s;
+}
+.product-display:nth-child(4){
+    animation-delay: 0.76s;
+}
+.product-display:nth-child(5){
+    animation-delay: 1s;
+}
+.product-display:nth-child(6){
+    animation-delay: 1.14s;
+}
+.product-display:nth-child(7){
+    animation-delay: 1.28s;
+}.product-display:nth-child(8){
+    animation-delay: 1.50s;
+}
+.product-display img{
+    height: 80px;
+    margin-bottom: 25px;
+    
+}
+@keyframes appear{
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 1326px){
+    .product-display{
+        height: 190px;
+        width: auto;
+        padding: 20px 0 0 0;
+    }
+}
+@media screen and (max-width: 992px){
+    .product-title{
+        font-size: 26px;
+    }
+    .product-display{
+        height: 140px;
+        width: auto;
+        padding: 20px 0 0 0;
+    }
+    .product-display img{
+        height: 57px;
+        margin-bottom: 15px;
+    }
+}
+
+/* feature */
+.news{
+    padding-bottom: 150px;
+}
+.news-title{
+    font-size: 39px;
+    font-weight: 600;
+    text-align: center;
+    line-height:1.2;
+    margin: 0 0 65px;
+    font-weight: bold;
+}
+.reveal .news-title{
+    opacity: 0;
+}
+.reveal.active .news-title{
+    animation: hidden 1.5s forwards;
+
+}
+@keyframes hidden {
+    to {
+        opacity: 1;
+    }
+}
+
+.feature-item{
+    position: relative;
+    height: 510px;
+}
+.feature-item_image{
+    background:url("https://www.careem.com/pubweb-v2/super-app-v2/img/feature-1.jpg");
+    height: 255px;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(50%);
+    opacity: 0;
+}
+.reveal.active .feature-item_image{
+    animation: moveToTopImg 1.5s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes moveToTopImg {    
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.feature-item_content{
+    background-color: #F2F5F8;
+    padding: 40px 54px;
+    height: 255px;
+    text-align: left;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.reveal.active .feature-item_content{
+    animation: moveToBotContent 1.5s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes moveToBotContent { 
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(-50%);
+    } 
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+#feature-2{
+    display: flex;
+    height:255px;
+    position: relative;
+}
+.feature-item_content_2{
+    padding:20px;
+    background-color:rgb(236, 245, 235);
+    width: 50%;
+    text-align: left;
+    transform: translateX(50%);
+    z-index: -1;
+    opacity: 0;
+}
+.reveal.active .feature-item_content_2{
+    animation: moveToLeftContent 2s forwards;
+    animation-delay: 0.8s;
+}
+@keyframes moveToLeftContent {    
+    0%{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.feature-item_image_2{
+    width: 50%;
+    background:url("https://www.careem.com/pubweb-v2/super-app-v2/img/feature-2.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-50%);
+    opacity: 0;
+
+}
+.reveal.active .feature-item_image_2{
+    animation: moveToRightImg 2s forwards;
+    animation-delay: 0.8s;
+}
+@keyframes moveToRightImg {  
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#feature-3{
+    display: flex;
+    height:255px;
+}
+.feature-item_image_3{
+    background:url("https://www.careem.com/pubweb-v2/super-app-v2/img/feature-3.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+}
+.reveal.active .feature-item_image_3{
+    animation: moveToLeftImg 2s forwards;
+    animation-delay: 1s;
+}
+@keyframes moveToLeftImg {
+    0%{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(50%);
+    }    
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.feature-item_content_3{
+    width: 50%;
+    background-color:rgb(255, 242, 216);
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -1;
+}
+.reveal.active .feature-item_content_3{
+    animation: moveToRightContent 2s forwards;
+    animation-delay: 1s;
+}
+@keyframes moveToRightContent {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(-50%);
+    }   
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@media screen and (max-width: 992px){
+    .news{
+        padding-bottom: 60px;
+    }
+    .news-title{
+        font-size: 26px;
+    }
+    .feature-item{
+        height: auto
+    }    
+    .feature-item_image{
+        height: 156px;
+        animation: none;
+        animation-fill-mode: none;
+    }
+    .feature-item_content{
+        height: 210px;
+        width: auto;
+        position: relative;
+    }
+    .feature-item_content h4{
+        font-size:18px;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+}
+
+/* new feature */
+.new-feature{
+    height: 620px;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+}
+h2{
+    font-weight: bold;
+}
+.new-feature_image{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/new-feature-1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 620px;
+    position: absolute;
+    opacity: 0;
+}
+.reveal.active .new-feature_image{
+    animation: moveToRightNewFeature 2s forwards;
+}
+.reveal.active .ani-new-feature_2{
+    animation: moveToRightNewFeature 2s forwards;
+}
+.reveal.active .new-feature_image_3{
+    animation: moveToRightNewFeature 2s forwards;
+}
+.reveal.active .new-feature_image_2{
+    animation: moveToLeftNewFeatureContent 2s forwards;
+}
+.reveal.active .new-feature_content_ani{
+    animation: moveToLeftNewFeatureContent 2s forwards;
+}
+@keyframes moveToNewFeature {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveToRightNewFeature{
+    from{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveToLeftNewFeatureContent{
+    from{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.new-feature_content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.new-feature_content_ani{
+    opacity: 0;
+}
+.ani-new-feature_2{
+    opacity: 0;
+}
+.new-feature_content h2{
+    font-size: 39px;
+    padding-right: 15px;
+}
+.new-feature_content p{
+    font-size:18px; 
+    margin-bottom: 16px;
+}
+.btn-link{
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.btn-link:hover{
+    text-decoration: none;
+    color: rgb(2, 83, 2);
+}
+.new-feature_image_2{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/new-feature-2.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 620px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+.new-feature_image_3{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/new-feature-3.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 620px;
+    position: absolute;
+    opacity: 0;
+}
+@media screen and (max-width: 992px){
+    .new-feature_image{
+        height:220px;
+        width: 100%;
+        margin-bottom: 36px;
+        position: relative;
+    }
+    .new-feature{
+        height: auto;
+        overflow: hidden;
+    }
+    .new-feature_image_2{
+        height:220px;
+        width: 100%;
+        margin-bottom: 36px;
+        position: relative;
+    }
+    .new-feature_image_3{
+        height:220px;
+        width: 100%;
+        margin-bottom: 36px;
+        position: relative;
+    }
+    .new-feature_content h2{
+        font-size: 26px;
+    }
+    .new-feature_content p{
+        font-size: 14px;
+    }
+}
+
+/* become card */
+.become-card{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/become-1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    height: 620px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.become-card h2{
+    font-size: 39px;
+}
+.become-card p{
+    padding:0 70px; 
+    margin-bottom: 1rem; 
+    font-size:18px;
+}
+.button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #48A23F;
+    height:64px;
+    width: 254px;
+    border-radius: 5px;
+    font-size:20px;
+    color: #fff;
+    padding: 0 20px;
+}
+.button:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+}
+#become{
+    position: relative;
+    padding-bottom: 150px;
+    margin-top: 150px;
+}
+.become-bg{
+    background-color: #48A23F;
+    z-index: -1;
+    height:460px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+.reveal.active .become-card{
+    animation: become-toTop 2s forwards;
+    animation-delay: 1s;
+}
+.reveal.active .become-bg{
+    animation: become-toTop 1s forwards
+}
+@keyframes become-toTop{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 992px){
+    #become{
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .become-card{
+        height: 430px;
+        padding: 30px 40px;
+        margin-bottom: 30px;
+    }
+    .become-card h2{
+        font-size:26px;
+    }
+    .become-card p{
+        font-size: 14px;
+    }
+    .become-bg{
+        height:240px;
+    }
+    .button{
+        width: auto;
+    }
+}
+
+/* cities */
+#cities{
+    height: 600px;
+    position: relative;
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/cities-promo.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+#cities .col-lg-5{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#cities h2{
+    font-size: 49px;
+    margin-bottom: 15px;
+}
+#cities p{
+    font-size:18px; 
+    margin-bottom: 16px;
+}
+#link-view-all{
+    width: 25%;
+}
+#cities-image{
+    height: 600px;
+    width: auto;
+    position: relative;
+}
+.cities-image_item{
+    position: absolute;
+}
+#city-image-1{
+    height: 280px;
+    width: 350px;
+    right: 0;
+    bottom: 378px;
+    opacity: 0;
+}
+.reveal.active .cities-image_item {
+    animation: scale-img-city forwards 1s;
+}
+#city-image-2{
+    height: 192px;
+    width: 255px;
+    right: 285px;
+    bottom: 154px;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+#city-image-3{
+    height: 288px;
+    width: 363px;
+    right: -108px;
+    bottom: 64px;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+#city-image-4{
+    height: 127px;
+    width: 160px;
+    right: 285px;
+    bottom: 0px;
+    opacity: 0;
+    animation-delay: 1s;
+}
+@keyframes scale-img-city {
+    from {
+        height: 0px;
+        width: 0px;
+        opacity: 1;
+    }
+    to{   
+        transform-origin: top left;
+        transform: 1s;
+        opacity: 1;
+    }
+}
+.cities-image_item_point{
+    width: 16px;
+    height:16px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    position: absolute;
+    background-color: #48A23F;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+.cities-image_item_wapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.cities-image_item_wapper figure{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width: 1326px){
+    /* .cities-image_item{
+        transform: scale(0.6);
+    } */
+    #cities-image{
+        transform: scale(0.62) translateY(-130px) translateX(41px);
+    }
+}
+@media screen and (max-width: 992px){
+    #cities h2{
+        font-size: 26px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    #cities p{
+        font-size:14px; 
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    #cities .btn-link{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #cities-image{
+        transform: scale(0.52) translateY(-130px) translateX(41px);
+    }
+}
+
+/* Question */
+#question{
+    margin-bottom: 160px;
+}
+#question h2{
+    font-size: 39px;
+    text-align: center;
+    margin-bottom: 43px;
+}
+#question button{
+    font-size:18px;
+}
+.accordion{
+    width: 920px;
+    margin: 0 auto;
+}
+.accordion-button:not(.collapsed)
+{
+    color:#000;
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: -40px;
+}
+.accordion-button{
+    border-top: 0.2px solid #6c757d;
+    padding: 28px 20px;
+    margin-bottom: -40px;
+}
+.accordion-body{
+    font-size: 18px;
+    padding: 20px;
+}
+.accordion-button::after{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/icons/plus.svg");
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/icons/minus.svg");
+    transform: none !important;
+}
+@media screen and (max-width: 992px){
+    #question h2{
+        font-size: 26px;
+        text-align: left;
+    }
+}
+
+/* motto */
+#motto{
+    padding: 0 50px;
+    height: 555px;
+    position: relative;
+    overflow: hidden;
+}
+#motto h2{
+    font-size: 68px;
+    margin-bottom: 27px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn-motto-desktop{
+    display:flex;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+.btn-motto-desktop a{
+    margin-right: 10px;
+}
+.motto-img{
+    background-image: url("https://www.careem.com/pubweb-v2/super-app-v2/img/motto-bg.jpg");
+    width: 100%;
+    height: 555px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    
+}
+.reveal.active .motto-img{
+    animation: scale-img 2s forwards;
+}
+@keyframes scale-img {
+    to{
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }    
+}
+@media screen and (max-width: 992px){
+    #motto h2{
+        font-size:32px;
+        position: relative;
+    }
+    #motto br{
+        display: none;
+    }
+    .btn-motto-desktop{
+        display:none;
+    }
+    .motto-img{
+        transform: translateX(100%)
+    }
+}

@@ -1,0 +1,237 @@
+.header-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    background-color: #499d3a;
+    padding-top: 20px;
+}
+.header-container .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo-img{
+    width: 154px;
+    float: left;
+    display: flex;
+    padding: 0 15px;
+    margin-left: 70px;
+}
+.logo-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.button{
+    text-decoration: none;
+}
+.btn-login{
+    background-color: #499d3a;
+    border-color: #fff!important;
+    color: #fff !important;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:1.5em;
+    align-items: center;
+    display: inline-flex;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.btn-login:hover{
+    background-color: #308421;
+    color:#fff;
+}
+.btn-signup{
+    background-color: #fff;
+    color: #499d3a !important;
+    border-color: #fff;
+    height: 42px;
+    margin-left: 3px;
+    align-items: center;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:1.5em;
+    cursor: pointer;
+}
+.btn-signup:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.897)
+}
+.btn-menu-toggle{
+    position: absolute;
+    left: 0;
+}
+@media screen and (max-width:992px){
+    .header-container{
+        position: relative;
+    }
+    .logo-img{
+        width: 92px;
+        margin: 0;
+        padding: 0;
+    }
+    .btn-menu-toggle{
+        right: 0;
+        left: auto;
+    }
+    .login-sign{
+        padding-right: 45px;
+    }
+}
+@media only screen and (max-width:767px){
+    .btn-login{
+        height:33px;
+        width: auto;
+    }
+    .btn-login span{
+        display: none;
+    }
+    .btn-signup{
+        height:33px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 424px){
+    .btn-signup span{
+        display: none;
+    }
+    .login-sign{
+        display: flex;
+    }
+}
+
+.featured-banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 80px;
+}
+.banner-img{
+    background-image: url("https://www.careem.com/pubweb-v2/newsroom/newsroom-bg-en.jpg");
+    background-position: center center;
+    background-size: cover;
+    height:500px;
+}
+.banner-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    width: 100%;
+}
+.banner-caption h1{
+    font-size:55px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+}
+.mb-4 h3{
+    font-weight: bold;
+}
+@media screen and (max-width: 992px){
+    .featured-banner{
+        margin-top: 0;
+    }
+    .banner-caption h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 767px){
+    .featured-banner .banner-img{
+        height: 544px;
+    }
+    .banner-caption h1{
+        font-size: 36px;
+    }
+}
+
+.section+.featured-banner{
+    margin-top: 0;
+}
+
+/*  */
+.section{
+    padding: 80px 0;
+    min-height: 80px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: var(--primary);
+    color: #fff !important;
+}
+.nav-pills .nav-item .nav-link, .nav-justified .nav-item .nav-link{
+    border: solid 1px #e3e8ec;
+    color: #2d2e2e;
+    margin: 0 10px;
+    padding: 8px 20px;
+}
+.tab-content{
+    padding-top:50px;
+}
+.story-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.story-card:hover{
+    transition: all .25s ease 0s;
+    transform: scale(1.05);
+}
+.story-card:hover img{
+    opacity: 0.75;
+    transition: opacity .25s;
+}
+.story-card-body{
+    padding: 1.25rem;
+}
+.compact{
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 5%);
+    text-align: center;
+}
+.story-card-sub-title{
+    color: var(--primary)
+}
+.story-card-title{
+    margin-bottom: .75rem;
+    font-size:18px;
+    line-height:1.22;
+    color: #2d2e2d;
+    font-weight: bold;
+}
+.story-card-text{
+    font-size: 14px;
+    line-height: 1.33;
+    color: #606c74;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.story-card a.link{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: 0;
+}
+.story-card-img-top{
+    width:100%;
+    object-fit: cover;
+}
+
+.story-card.padding img{
+    padding: 18px;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.15/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/drive.css">
+    <link rel="stylesheet" href="css/ride.css">
+    <link rel="stylesheet" href="css/business.css">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container">
+            <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+            <div class="login-sign">
+                <a class="btn-login btn btn-light">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/login.svg" alt="" style="margin-right: 5px;">
+                    <span lass="d-none d-lg-inline">Login</span>
+                </a>
+                <a class="btn-signup btn">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+            <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
+                <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
+            </label>
+        </div>
+    </header>
+    <main>
+    <input type="checkbox" name="" id="nav-input">
+    <section id="mySidenav" class="sidenav">
+        <label for="nav-input" class="closebtn">&times;</label>
+        <a href="#">About us</a>
+        <div>
+            <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+            <label for="section1" class="show-according" style="display: flex ">
+                Products
+                <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+            </label>
+            <div class="according-menu">
+                <a href="ride.html"><p>Ride with us</p></a>
+                <a href="drive.html"><p>   Drive with us</p></a>
+                <a href=""><p>   Order with us</p></a>
+                <a href=""><p>   Careem Express</p></a>
+                <a href=""><p>    Careem Pay</p></a>
+                <a href="business.html"><p>   Careem For Business</p></a>
+                <p>   Careem Plus</p>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+            <label for="section2" class="show-according" style=" display: flex ">
+                More for you
+                <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+            </label>
+            <div class="according-menu">
+                <a href="packages.html"><p>Packages</p></a>
+                <a href="rewards.html"><p>  Careem Rewards</p></a>
+            </div>
+        </div>
+        <a href="#">Safety</a>
+        <a href="#">Join the team</a>
+        <a href="#">Help</a>
+        <a href="#" style="font-size: 16px; display: flex;">
+            <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
+                English</a>
+    </section>
+    <label for="nav-input" class="nav__overplay"></label>
+        <section class="featured-banner banner-large">
+            <div class="banner-img"></div>
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-5 col-lg-6">
+                                <h1>Sit back and let us do the work</h1>
+                                <p>Careem for Business is your ultimate corporate travel companion to get your team where they need to be. 
+                                    Pre-book rides online for extra convenience, or book a ride on demand.</p>
+                        </div>
+                        <div class="col-12 col-sm-7 col-lg-6">
+                            <div class="register-form">
+                                <h2>Let one of our agents connect with you</h2>
+                                <div class="form-content">If you are unable to submit this form, please try the one
+                                    <a href="#">here</a>.
+                                </div>
+                                <div class="group signup-form-group new-field" id="company_cont">
+                                    <input type="email" id="email" placeholder="Company">
+                                </div>
+                                <div class="group signup-form-group new-field" id="fullname_cont">
+                                    <input type="email" id="email" placeholder="Full name">
+                                </div>
+                                <div class="allow-dropdown floated-label-wrapper separate-dial-code"  dir="ltr">
+                                    <div class="flag-container">
+                                        <input type="tel" id="phoneNumber-form-1" data-GAFieldName="phoneNumber" class="form-control flaginput" separateDialCode="true" autocomplete="off" placeholder="Phone number" onBlur="onBlurPhoneNumber('phoneNumber-form-1','error-form-1-phoneNumber')">
+                                    </div>
+                                </div>
+                                <div class="group signup-form-group new-field" id="email_cont">
+                                    <input type="email" id="email" placeholder="Your email address">
+                                </div>
+                                <div class="cities group signup-form-group new-field" id="city_cont">
+                                    <select name="" id="city" class="select-dropdown">
+                                        <option value="en-pk" selected disabled>Type of service</option>
+                                        <option value="en-pk">Corporate Transportation</option>
+                                        <option value="en-pk">Fleet Management</option>
+                                        <option value="en-pk">Deliveries</option>
+                                    </select>
+                                </div>
+                                <div class="fixd-btn">
+                                    <button id="signup" type="button" class="btn btn-primary btn-block">Get started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title text-center">Our promises</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="story-card iconic">
+                            <img src="https://www.careem.com/pubweb-v2/careem-for-business/images/reli.png" class="story-card-img-top">
+                            <div class="story-card-body pb-0">
+                                <h5 class="story-card-title text-center">Reliability</h5>
+                                <p class="story-card-text text-center">Our Captains are always on time, and our call center is available 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="story-card iconic">
+                            <img src="https://www.careem.com/pubweb-v2/careem-for-business/images/quality.png" class="story-card-img-top">
+                            <div class="story-card-body pb-0">
+                                <h5 class="story-card-title text-center">Quality</h5>
+                                <p class="story-card-text text-center">Captains who will always make you feel at home in your city, or theirs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="story-card iconic">
+                            <img src="https://www.careem.com/pubweb-v2/careem-for-business/images/safety.png" class="story-card-img-top">
+                            <div class="story-card-body pb-0">
+                                <h5 class="story-card-title text-center">Safety</h5>
+                                <p class="story-card-text text-center">Your team’s safety is our top priority.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section-2">
+            <div class="container">
+                <div class="row align-items-center mb-5 reveal">
+                    <div class="col-sm-12">
+                        <h3 class="section-title text-center">Keep your business moving</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                        <div class="img-fluid cover img-500-380 ani-to-right-1" style="background-image: url('https://www.careem.com/pubweb-v2/careem-for-business/images/cfb1.jpg')"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ani-to-left-1">
+                        <h3>Meetings. Interviews. Airports. Your rides are sorted.</h3>
+                        <p>Pre-book rides online for extra convenience, or book a ride on demand. From meetings to interviews to lunches to airports, 
+                            Careem for Business is the ultimate corporate travel companion to get your team where they need to be.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5 reveal">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-sm-2 order-md-1 ani-to-right-2">
+                        <h3>With a variety of payment options, travel expensing has never been easier.</h3>
+                        <p>View your total travel spend, all upcoming bookings, and settle your account at your own convenience through a variety of billing and payment methods.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-sm-1 order-md-2 ani-to-left-2">
+                        <div class="img-fluid cover img-500-380" style="background-image: url('https://www.careem.com/pubweb-v2/careem-for-business/images/cfb2.jpg')"></div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5 reveal">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="img-fluid cover img-500-380 ani-to-right-3" style="background-image: url('https://www.careem.com/pubweb-v2/careem-for-business/images/cfb3.jpg')"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ani-to-left-3">
+                        <h3>You've got more important things on your mind. Leave the navigating to us.</h3>
+                        <p>Our Captains are experts in getting around the busy highways and narrow streets of the region, to make sure you get to where you need to be.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5 reveal">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-sm-2 order-md-1 ani-to-right-4">
+                        <h3>Designed for the business traveler in you.</h3>
+                        <p>Handshakes over breakfast in Dubai. Coffee over lunch in Cairo. When you travel across the region, Careem for Business has got all your transportation needs covered, from city to city. 
+                            All you have to do is sit back, and focus on what’s important – your comfort. Keep your business going wherever you are thanks to Careem's regional coverage.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-sm-1 order-md-2 ani-to-left-4">
+                        <div class="img-fluid cover img-500-380" style="background-image: url('https://www.careem.com/pubweb-v2/careem-for-business/images/cfb4.jpg')"></div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-12 text-center">
+                        <a href="#" class="btn btn-primary">Let one of our agents connect with you</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="waper">
+                    <nav class="nav-footer">
+                        <a href="#" class="d-none">
+                            <img class="footer-logo_img" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                        </a>
+                        <a href="#">Products</a>
+                        <a href="#">Safety</a>
+                        <a href="#">Help</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                    </nav>
+                    <div class="social-media-link">
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <nav class="bottom-navigation">
+                        <a href="/terms.html">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </nav>
+                    <div class="copy-right">
+                        <a href="#">
+                            <img class="footer-logo_hidden d-lg-none" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                        </a>
+                        <p>All rights reserved. Careem, an Uber company © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.15/js/intlTelInput.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.15/js/utils.js"> </script>
+<script src="business.js"></script>
+</html>

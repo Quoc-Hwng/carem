@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="myAlert" class="alert alert-warning alert-dismissable alert-with-icon" role="alert">
+        <div class="container">
+            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/info.svg" class="alert-icon" alt="">
+            <p>Learn about Careem's response to Covid-19
+                <a href="#">here</a>
+            </p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="myAlert()">
+                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/times.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <section id="sec-header">
+        <header style="padding: 20px;">
+                    <div class="container">
+                        <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+                        <div class="login-sign">
+                            <a class="btn-login btn btn-light">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/login.svg" alt="" style="margin-right: 5px;">
+                                <span lass="d-none d-lg-inline">Login</span>
+                            </a>
+                            <a class="btn-signup btn">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
+                                <span>Sign Up</span>
+                            </a>
+                        </div>
+                        <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
+                            <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
+                        </label>
+                    </div>
+        </header>
+        <div class="content-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <h1 class="ani-toLeft">Everyday life, made simple.</h1>
+                        <p class="content-header">Ride, order food, shop, pay or become a Captain.
+                            Careem is a hassle-free, one stop solution for your
+                            daily needs.</p>
+                        <div class="btn-app">                                  
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/app-store-button.png" alt="" height="40px">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/google-play-button.png" alt="" height="40px">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/android-button-direct1.png" alt="" style="height:53px; margin-top: -7px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md"></div>
+                </div>
+            </div>
+        </div>
+        <div class="background-img"></div>
+    </section>
+    <input type="checkbox" name="" id="nav-input">
+    <section id="mySidenav" class="sidenav">
+        <label for="nav-input" class="closebtn">&times;</label>
+        <ul class="vertical-menu-list">
+            <li>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="show-according" style="display: flex ">
+                    Products
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <ul class="according-menu">
+                    <li><a href="ride.html">Ride with user</a></li>
+                    <li><a href="drive.html">Drive with us</a></li>
+                    <li><a href="">Order with us</a></li>
+                    <li><a href="">Careem Express</a></li>
+                    <li><a href="">Careem Pay</a></li>
+                    <li><a href="business.html">Careem For Business</a></li>
+                    <li><a href="">Careem Plus</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="show-according" style=" display: flex ">
+                    More for you
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <ul class="according-menu">
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="rewards.html">Careem Rewards</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Join the team</a></li> 
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="region">
+            <input type="checkbox" name="" class="accordion__input" id="region">
+            <label for="region" class="show-according" style="font-size: 16px; display: flex;">
+                <span><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">
+                English</span>
+                <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+            </label>
+            <ul class="according-menu">
+                <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">English</a></li>
+                <li><a href="#">VietNam</a></li>
+            </ul>
+        </div>
+    </section>
+    <label for="nav-input" class="nav__overplay"></label>
+    <section class="appear-respone">
+        <div class="col-lg">
+            <h1 class="ani-toLeft">Everyday life, made simple.</h1>
+            <p class="content-header">Ride, order food, shop, pay or become a Captain.
+                Careem is a hassle-free, one stop solution for your
+                daily needs.</p>
+            <div class="btn-app_appear">                                  
+                <a href="#">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/google-play-button.png" alt="" height="40px">
+                </a>
+                <a href="#">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/android-button-direct1.png" alt="" style="height:53px; margin-top: -7px;">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="navbar navbar-inverse collapse" id="navbar">
+        <div>
+            <ul>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </section>
+    <section class="group-product reveal">
+        <div class="container">
+            <h2 class="product-title">One app for everyday needs</h2>
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="product-display">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/car.png" height="80px">
+                        Car
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 ">
+                    <div class="product-display">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/taxi.png" >
+                            Taxi
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 ">
+                    <div class="product-display">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/bike.png">
+                        Bike
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 ">
+                    <div class="product-display">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/food.png" >Food</div>
+                </div>
+                <div class="col-6 col-lg-3 ">
+                    <div class="product-display">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/shops.png">Shops</div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="product-display">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/delivery.png">Delivery</div>
+                </div>
+                <div class="col-6 col-lg-3 ">
+                    <div class="product-display">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/recharge.png">Recharge</div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="product-display">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/services/credit.png" >Send Credit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news reveal">
+        <div class="container">
+            <h2 class="news-title" id="list-item-1">Simplifying and improving the lives of
+                <br>                people across our region
+            </h2>
+            <div id="carouselExampleControls" class="carousel slide d-lg-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="feature-item" id="feature-1">
+                        <div class="feature-item_image">
+                        </div>
+                        <div class="feature-item_content">
+                            <h4>Empowered 1+ million Captains and Captinahs</h4>
+                            <p style="margin-bottom: 16px;">We've created opportunities for over a million people in the region to earn an income.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="feature-item" id="feature-1">
+                        <div class="feature-item_image" style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/feature-2.jpg')">
+                        </div>
+                        <div class="feature-item_content" style="background-color:rgb(236, 245, 235)">
+                            <h4>Simply happy Customers</h4>
+                            <p style="margin-bottom: 16px;">We're making life simple for millions of Customers with our everyday services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="feature-item" id="feature-1">
+                        <div class="feature-item_image" style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/feature-3.jpg')">
+                        </div>
+                        <div class="feature-item_content" style="background-color:rgb(255, 242, 216);">
+                            <h4>More than 700,000 refugees supported</h4>
+                            <p style="margin-bottom: 16px;">With the help of your generous donations through Careem Rewards, we have supported thousands of refugee families with daily essentials.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="feature-item" id="feature-1">
+                            <div class="feature-item_image">
+                            </div>
+                            <div class="feature-item_content">
+                                <h4 style="font-size: 30px; font-weight: bold; margin-bottom: 16px;">Empowered 1+ million Captains and Captinahs</h4>
+                                <p style="margin-bottom: 16px;">We've created opportunities for over a million people in the region to earn an income.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-item" id="feature-2">
+                            <div class="feature-item_content_2">
+                                <h4 style="font-size: 23px; font-weight: bold; margin-bottom: 16px;">Simply happy Customers</h4>
+                                <p style="margin-bottom: 16px;">We’re making life simple for millions of Customers with our everyday services.</p>
+                            </div>
+                            <div class="feature-item_image_2">
+                            </div>
+                        </div>
+                        <div class="feature-item" id="feature-3">
+                            <div class="feature-item_image_3">
+                            </div>
+                            <div class="feature-item_content_3" style="padding: 20px;">
+                                <h4 style="font-size: 23px; font-weight: bold; margin-bottom: 16px;">More than 700,000 refugees supported</h4>
+                                <p style="margin-bottom: 16px;">With the help of your generous donations through Careem Rewards, we have supported thousands of refugee families with daily essentials.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="new-feature">
+        <div class="new-feature reveal">
+            <div class="new-feature_image">
+            </div>
+            <div class="container new-feature_content new-feature_content_ani">
+                <div class="col-lg-5 offset-lg-7">
+                    <h2>Simplify your payments with Careem Pay</h2>
+                    <p>Pay for your Careem rides and food orders, send funds to your family, and so much more with Careem Pay.</p>
+                    <a href="#" class="btn-link">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="new-feature reveal">
+            <div class="new-feature_image_2">
+            </div>
+            <div class="container new-feature_content ani-new-feature_2">
+                <div class="col-lg-5">
+                    <h2>Treat yourself with Careem Rewards</h2>
+                    <p>Get more from every ride with Careem Rewards by redeeming your points on partner benefits or making a donation to your favourite charity.</p>
+                    <a href="#" class="btn-link">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="new-feature reveal">
+            <div class="new-feature_image_3">
+            </div>
+            <div class="container new-feature_content new-feature_content_ani">
+                <div class="col-lg-5 offset-lg-7">
+                    <h2>We care about you</h2>
+                    <p>We’re here to provide you with a hassle-free experience that makes your life easier.</p>
+                    <a href="#" class="btn-link">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="become" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="become-card">
+                        <h2>Become a Captain</h2>
+                        <p>It’s up to you! Start earning with Careem today.</p>
+                        <a href="#" class="button">Sign up now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="become-card" style="background-image:url('https://www.careem.com/pubweb-v2/super-app-v2/img/become-2.jpg')">
+                        <h2>Become a Partner</h2>
+                        <p>Partner with Careem and grow your business.</p>
+                        <a href="#" class="button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="become-bg"></div>
+    </section>
+    <section id="cities" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>From the region, for the region</h2>
+                    <p>Careem operates in more than 100 cities in 13 countries from Morocco to Pakistan.</p>
+                    <a href="#" class="btn-link" id="link-view-all">View All Cities</a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div id="cities-image">
+                        <div class="cities-image_item" id="city-image-1">
+                            <span class="cities-image_item_point"></span>
+                            <div class="cities-image_item_wapper">
+                                <figure style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/city-image-1.jpg')"></figure>
+                            </div>
+                        </div>
+                        <div class="cities-image_item" id="city-image-2">
+                            <span class="cities-image_item_point"></span>
+                            <div class="cities-image_item_wapper">
+                                <figure style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/city-image-2.jpg')"></figure>
+                            </div>
+                        </div>
+                        <div class="cities-image_item" id="city-image-3">
+                            <span class="cities-image_item_point"></span>
+                            <div class="cities-image_item_wapper">
+                                <figure style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/city-image-3.jpg')"></figure>
+                            </div>
+                        </div>
+                        <div class="cities-image_item" id="city-image-4">
+                            <span class="cities-image_item_point"></span>
+                            <div class="cities-image_item_wapper">
+                                <figure style="background-image: url('https://www.careem.com/pubweb-v2/super-app-v2/img/city-image-4.jpg')"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="question">
+        <div class="container">
+            <div>
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 100%;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How do I create an account?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>To create a Careem account you need a valid email address and mobile number. 
+                                    Download the app for your iOS or Android device and sign up with your mobile number. 
+                                    You may use an international number as long as the number is active to receive SMS.</p>
+                                <p>To make sure it’s your real number, we’ll send you a verification code via SMS which you need to enter to sign up. 
+                                    If the SMS with the code does not arrive, you can request a call from the same screen.</p>
+                                <p>Once your number is verified, you’re ready to use Careem!</p>
+                                <p>Alternatively, if you're comfortable with linking your Facebook profile to your Careem account, you can sign up via Facebook. 
+                                    The app will redirect you to a Facebook page where the email and password are required to authorize Careem usage.</p>
+                                <p>During the sign-up process, we ask you for your email address. 
+                                    We need your email address for instances where you may have forgotten your password and need to receive instructions via email on how to reset it.
+                                    We also send you detailed ride receipts via email.</p>
+                                <p>You can also create an account on the web at www.careem.com.</p>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How do I earn Careem Rewards points?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>You’ll earn points on every Careem ride you take. No sign up required! The number of points you earn depends on the cost of the ride. You’ll earn points on all rides paid by cash, card, or invoice.
+                                    You won’t earn points on rides taken using a Package or Careem Credit, but you will earn points for topping up your Wallet with credit (excluding Fawry top ups in Egypt). Points are awarded based on the actual spend on Careem. Unpaid or free rides will not earn you points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How can I add my credit card on the app for payments?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    In the Careem Pay section, press on Add Card which will lead you to a simple form, simply enter these details and press Save. For some cards, you will be re-directed to enter an OTP sent to your mobile number associated with the card and your card will be added upon successful authentication.
+                                    Careem may charge you a small amount to verify your card that will automatically be refunded to your card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            How do I become a Captain?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Becoming a captain is a simple three step process. First you will need to register with Careem by completing the captain form available on the website. After reviewing your application, we will invite you for a training session. Once the training is complete, you can start riding with us.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Where can I get more information, support or make a claim?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    We do our best to provide you with all the help you may need in our FAQs.
+                                    If you need to get in touch with us, you can go to the app Menu 
+                                    > Get help.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>    
+        </div>
+    </section>
+    <section id="motto" class="reveal">
+        <h2>One app for
+            <br>
+            everyday needs
+        </h2>
+        <div class="btn-motto-desktop">                                  
+            <a href="#">
+                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/app-store-button.png" alt="" height="40px">
+            </a>
+            <a href="#">
+                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/google-play-button.png" alt="" height="40px">
+            </a>
+            <a href="#">
+                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/android-button-direct1.png" alt="" style="height:53px; margin-top: -7px;">
+            </a>
+        </div>
+        <div class="motto-img"></div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="waper">
+                <nav class="nav-footer">
+                    <a href="#" class="d-none">
+                        <img class="footer-logo_img" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                    </a>
+                    <a href="#">Products</a>
+                    <a href="#">Safety</a>
+                    <a href="#">Help</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                </nav>
+                <div class="social-media-link">
+                    <a href="#">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/twitter.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="bottom">
+                <nav class="bottom-navigation">
+                    <a href="/terms.html">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </nav>
+                <div class="copy-right">
+                    <a href="#">
+                        <img class="footer-logo_hidden d-lg-none" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                    </a>
+                    <p>All rights reserved. Careem, an Uber company © 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

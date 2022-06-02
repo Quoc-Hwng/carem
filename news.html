@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href=css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/press.css">
+    <title>Press and Media</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container">
+            <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+            <div class="login-sign">
+                <a class="btn-login btn btn-light">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/login.svg" alt="" style="margin-right: 5px;">
+                    <span lass="d-none d-lg-inline">Login</span>
+                </a>
+                <a class="btn-signup btn">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+            <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
+                <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
+            </label>
+        </div>
+    </header>
+    <main>
+        <input type="checkbox" name="" id="nav-input">
+        <section id="mySidenav" class="sidenav">
+            <label for="nav-input" class="closebtn">&times;</label>
+            <a href="#">About us</a>
+            <div>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="show-according" style="display: flex ">
+                    Products
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="ride.html"><p>Ride with us</p></a>
+                    <a href="drive.html"><p>   Drive with us</p></a>
+                    <a href=""><p>   Order with us</p></a>
+                    <a href=""><p>   Careem Express</p></a>
+                    <a href=""><p>    Careem Pay</p></a>
+                    <a href="business.html"><p>   Careem For Business</p></a>
+                    <p>   Careem Plus</p>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="show-according" style=" display: flex ">
+                    More for you
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="packages.html"><p>Packages</p></a>
+                    <a href="rewards.html"><p>  Careem Rewards</p></a>
+                </div>
+            </div>
+            <a href="#">Safety</a>
+            <a href="#">Join the team</a>
+            <a href="#">Help</a>
+            <a href="#" style="font-size: 16px; display: flex;">
+                <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
+                    English</a>
+        </section>
+        <label for="nav-input" class="nav__overplay"></label>
+        <section class="featured-banner">
+            <div class="banner-img"></div>
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-lg-6">
+                            <h1>Newsroom</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-pills justify-content-center">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#announcements" data-toggle="tab">Announcements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#coverage" data-toggle="tab">Coverage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#media" data-toggle="tab">Media Assets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="tab-content">
+                            <div id="announcements" class="tab-pane fade active show">
+                                <div class="row">
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://c4b.s3-eu-west-1.amazonaws.com/Public-Web/press/careem-lebanon-preview.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Thu 13th August 2020</h6>
+                                                <h5 class="story-card-title">Careem provides its customers with a chance to Donate and help the People of Beirut</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/now.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Thu 4th July 2019</h6>
+                                                <h5 class="story-card-title">Careem NOW data shows that healthy intentions falter as the week goes on</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/whatsapp-booking.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 30th June 2019</h6>
+                                                <h5 class="story-card-title">You can now use Careem bot to book via WhatsApp in Iraq</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/wifi.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Thu 27th June 2019</h6>
+                                                <h5 class="story-card-title">Free Wi-Fi in all UAE Careem cars</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/pictch-deck.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Wed 26th June 2019</h6>
+                                                <h5 class="story-card-title">Careem’s pitch deck that returned 100X for investors</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/iraq.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 11th June 2019</h6>
+                                                <h5 class="story-card-title">Careem Basra has launched in Iraq</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/Articles/bike.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 28th May 2019</h6>
+                                                <h5 class="story-card-title">Careem Bike marks Careem’s entrance into micro-mobility</h5>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="coverage" class="tab-pane fade">
+                                <div class="row mb-4">
+                                    <div class="col-12 mb-3">
+                                        <h3 class="text-center">Careem in the News</h3>
+                                        <p class="text-center">Contact us at <a href="" class="link">press@careem.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/albawaba.png" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 28th July 2020</h6>
+                                                <h5 class="story-card-title">Careem Visa Partnership Announcement</h5>
+                                                <p class="story-card-text">Careem and Visa Sign Landmark Partnership to Accelerate Cashless Payments and Digital Financial Inclusion Across Middle East and North Africa Region</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/bloomberg.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 9th June 2020</h6>
+                                                <h5 class="story-card-title">Interview on Morning Television with Mudassir on learning from the pandemic and way forward</h5>
+                                                <p class="story-card-text">Uber’s Middle East Unit Careem Sees Recovery After 80% Slump</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/reuter.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 4th June 2020</h6>
+                                                <h5 class="story-card-title">Uber's Middle East business Careem sees ride-hailing recovery next year</h5>
+                                                <p class="story-card-text">Careem expects ride-hailing demand to recover to pre-pandemic levels “sometime” in 2021</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/cnbc.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 31st May 2020</h6>
+                                                <h5 class="story-card-title">Interview with Mudassir / Recovery</h5>
+                                                <p class="story-card-text">Careem doesn’t expect full recovery until 2021, but sees accelerated expansion for its ‘Super App’</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/the-national.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 5th Jan 2020</h6>
+                                                <h5 class="story-card-title">Uber completes $3.1 billion deal to buy Dubai's Careem</h5>
+                                                <p class="story-card-text">Uber completed the $3.1 billion acquisition of Careem’s businesses across the Middle East. The Dubai ride-hailing company retains operational and brand independence even as it becomes a wholly-owned subsidiary of the American firm. Careem co-founder Mudassir Sheikha also remains chief executive. Its board will be made up of three representatives from Uber and two representatives from Careem.</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/the-national.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 11th Jun 2019</h6>
+                                                <h5 class="story-card-title">Careem delivers ride-hailing to Iraq's second-largest city Basra</h5>
+                                                <p class="story-card-text">Ride-hailing company Careem has extended its services to the southern Iraqi city of Basra in the latest expansion for the company. It currently operates in Baghdad and Najaf and has an ongoing pilot project in Erbil. The service will use existing taxis throughout the city, catering to a population of around 2.5 million.</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/wamda.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 28th May 2019</h6>
+                                                <h5 class="story-card-title">Careem acquires Abu Dhabi's Cyacle bike-share company</h5>
+                                                <p class="story-card-text">Careem has acquired UAE-based bike-sharing company Cyacle for an undisclosed sum as the ride-hailing company makes its first foray into "micro-mobility" - an increasingly popular service providing easy access to scooter and bike rentals in urban areas.</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/bloomberg.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Tue 14th May 2019</h6>
+                                                <h5 class="story-card-title">Uber's Mideast Addition Careem Offers Bus Hailing to Pilgrims</h5>
+                                                <p class="story-card-text">Careem, which agreed in March to be bought by the U.S. mobility pioneer for $3.1 billion, will provide direct rides between Jeddah on the Red Sea to the holy city of Mecca for 25 riyals ($6.70) each way, a distance covering about 85 kilometers (53 miles.)</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/forbes.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sat 11th May 2019</h6>
+                                                <h5 class="story-card-title">Careem Shares Plans To Become The Super App Of The Middle East</h5>
+                                                <p class="story-card-text">Careem leveraged the existing infrastructure built out for its ride-hailing service to launch online delivery for goods and services with initial efforts focused on foodservice. It also launched peer-to-peer, closed loop and prepaid credit transfer service to its consumer base. More recently, it introduced a rewards program.</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/reuter.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Sun 23rd Dec 2018</h6>
+                                                <h5 class="story-card-title">Dubai government to launch taxi venture with ride-hailing service Careem</h5>
+                                                <p class="story-card-text">DUBAI, Dec 23 (Reuters) - Dubai’s transport regulator is to launch a new taxi service with Careem, a ride-hailing rival to Uber in the Middle East.
+                                                    <br>
+                                                    The emirate’s Roads and Transport Authority (RTA) said the deal was the first in the world between a state transport authority and a private sector ride-hailing service
+                                                </p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 mb-5">
+                                        <div class="story-card compact h-100 mb-3 padding">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/coverage/tc.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h6 class="story-card-sub-title">Mon 17th Dec 2018</h6>
+                                                <h5 class="story-card-title">Dubai government to launch taxi venture with ride-hailing service Careem</h5>
+                                                <p class="story-card-text">The ride-hailing giant Careem is now in the delivery business as the company seeks new verticals in its ever-increasing fight against other services in the Middle East, including Uber. Starting with food delivery in Dhabi and Jeddah.</p>
+                                                <a href="" class="link">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="media" class="tab-pane fade">
+                                <div class="row mb-4">
+                                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+                                        <div class="mb-3">
+                                            <h3 class="text-center">Media Assets</h3>
+                                            <p class="text-center">Download our press kit and assets here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <div class="col-sm-3">
+                                        <div class="story-card compact h-100 mb-3">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/media-assets/media-photos.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h5 class="story-card-title">Image gallery</h5>
+                                                <a href="" class="link">Download now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="story-card compact h-100 mb-3">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/media-assets/screenshots.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h5 class="story-card-title">App screenshots</h5>
+                                                <a href="" class="link">Download now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="story-card compact h-100 mb-3">
+                                            <img src="https://www.careem.com/pubweb-v2/newsroom/media-assets/logos.jpg" alt="" class="story-card-img-top">
+                                            <div class="story-card-body">
+                                                <h5 class="story-card-title">Logos</h5>
+                                                <a href="" class="link">Download now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="waper">
+                    <nav class="nav-footer">
+                        <a href="#" class="d-none">
+                            <img class="footer-logo_img" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                        </a>
+                        <a href="#">Products</a>
+                        <a href="#">Safety</a>
+                        <a href="#">Help</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                    </nav>
+                    <div class="social-media-link">
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <nav class="bottom-navigation">
+                        <a href="/terms.html">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </nav>
+                    <div class="copy-right">
+                        <a href="#">
+                            <img class="footer-logo_hidden d-lg-none" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                        </a>
+                        <p>All rights reserved. Careem, an Uber company © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

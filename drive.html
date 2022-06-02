@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/drive.css">
+    <script src="js/main.js"></script>
+    <title>Drive with Careem</title>
+</head>
+<body>
+    <div dir="ltr" class="landing_page">
+        <section class="new-landing">
+            <nav>
+                <div class="container">
+                    <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+                    <div class="login-sign">
+                        <a class="btn-login btn btn-light">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/login.svg" alt="" style="margin-right: 5px;">
+                            <span lass="d-none d-lg-inline">Login</span>
+                        </a>
+                        <a class="btn-signup btn">
+                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
+                            <span>Sign Up</span>
+                        </a>
+                    </div>
+                    <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
+                        <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
+                    </label>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="header-left">
+                            <span class="tagline">Your time. Your day.
+                                <br>
+                                Your life.</span>
+                            <h1>Drive with Careem and be a Captain</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-5 custom-busy-model">
+                        <div class="register-form">
+                            <span class="heading">Create a new account</span>
+                            <div class="cities group signup-form-group new-field" id="city_cont">
+                                <select name="" id="city" class="select-dropdown">
+                                    <i class="fa fa-caret-down icon"></i>
+                                    <option value="en-pk">Dubai</option>
+                                    <option value="en-pk">Vietname</option>
+                                </select>
+                            </div>
+                            <div dir="ltr" class="number-with-flag">
+                                <div class="cell-flag">
+                                    <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/4x3/ae.svg" alt="" width="20px">
+                                </div>
+                                <input type="tel" name="phone" placeholder="+971">
+                            </div>
+                            <div class="group signup-form-group new-field" id="email_cont">
+                                <input type="email" id="email" placeholder="Email Address (Optional)">
+                            </div>
+                            <div class="group signup-form-group new-field" id="reference_id_cont">
+                                <input type="text" id="reference_id_cont" placeholder="Referral Id (Optional)">
+                            </div>
+                            <div class="fixd-btn">
+                                <button id="signup" type="button" class="btn btn-default">Sign up now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <input type="checkbox" name="" id="nav-input">
+        <section id="mySidenav" class="sidenav">
+            <label for="nav-input" class="closebtn">&times;</label>
+            <a href="#">About us</a>
+            <div>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="show-according" style="display: flex ">
+                    Products
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="ride.html"><p>Ride with us</p></a>
+                    <a href="drive.html"><p>   Drive with us</p></a>
+                    <a href=""><p>   Order with us</p></a>
+                    <a href=""><p>   Careem Express</p></a>
+                    <a href=""><p>    Careem Pay</p></a>
+                    <a href="business.html"><p>   Careem For Business</p></a>
+                    <p>   Careem Plus</p>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="show-according" style=" display: flex ">
+                    More for you
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="packages.html"><p>Packages</p></a>
+                    <a href="rewards.html"><p>  Careem Rewards</p></a>
+                </div>
+            </div>
+            <a href="#">Safety</a>
+            <a href="#">Join the team</a>
+            <a href="#">Help</a>
+            <a href="#" style="font-size: 16px; display: flex;">
+                <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
+                    English</a>
+        </section>
+        <label for="nav-input" class="nav__overplay"></label>
+        <div>
+            <section class="new-landing-content">
+                <div class="container">
+                    <div class="become-caption">
+                        <h2 class="text-center">Why become a caption?</h2>
+                        <div class="row text-center">
+                            <div class="col-lg-4">
+                                <div class="landing-icon">
+                                    <img src="https://drive.careem.com/assets/images/landing/be_own_boss_icn.svg" alt="">
+                                    <h4>Be your own boss</h4>
+                                    <p>Full time? Part time? With Careem you work on your own time.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="https://drive.careem.com/assets/images/landing/make_your_own_money_icn.svg" alt="">
+                                <h4>Make your own money</h4>
+                                <p>You decide how much money you make and when you make it.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="https://drive.careem.com/assets/images/landing/control_life_icn.svg" alt="">
+                                <h4>Control your own life</h4>
+                                <p>Take charge and achieve what you're working for, on your own terms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="city-cover">
+                        <img src="https://drive.careem.com/assets/images/landing/section3.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="requirements">
+                            <div class="row research-city">
+                                <div class="col-lg-8" style="padding: 0 15px;">
+                                    <h2>Requirement</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="age_icn"><g transform="translate(13.000000, 11.000000)" id="noun_1165460_cc"><g><path d="M42,18.1304348 L42,10.7826087 C42,7.03667735 39.030941,4 35.3684211,4 L6.63157895,4 C2.96905903,4 0,7.03667735 0,10.7826087 L0,36.2173913 C0,39.9633227 2.96905903,43 6.63157895,43 L35.3684211,43 C39.030941,43 42,39.9633227 42,36.2173913 L42,18.1304348 Z M2.21052632,10.7826087 C2.21052632,8.28532113 4.189899,6.26086957 6.63157895,6.26086957 L35.3684211,6.26086957 C37.810101,6.26086957 39.7894737,8.28532113 39.7894737,10.7826087 L39.7894737,15.8695652 L2.21052632,15.8695652 L2.21052632,10.7826087 Z M35.3684211,40.7391304 L6.63157895,40.7391304 C4.189899,40.7391304 2.21052632,38.7146789 2.21052632,36.2173913 L2.21052632,18.1304348 L39.7894737,18.1304348 L39.7894737,36.2173913 C39.7894737,38.7146789 37.810101,40.7391304 35.3684211,40.7391304 Z" id="Shape" fill="#37B44E" fill-rule="nonzero"></path><g id="Group-23" transform="translate(8.000000, 22.000000)" fill="#37B44E"><rect id="Rectangle-5" x="0" y="0" width="6" height="4" rx="2"></rect><rect id="Rectangle-5" x="10" y="0" width="6" height="4" rx="2"></rect><rect id="Rectangle-5" x="10" y="8" width="6" height="4" rx="2"></rect><rect id="Rectangle-5" x="20" y="8" width="6" height="4" rx="2"></rect><rect id="Rectangle-5" x="20" y="0" width="6" height="4" rx="2"></rect></g><g id="Group-2" transform="translate(12.000000, 0.000000)" stroke="#37B44E" stroke-width="2" stroke-linecap="round"><path d="M1.5,0.5 L1.5,11.545361" id="Line-3"></path><path d="M17.5,0.5 L17.5,11.545361" id="Line-3"></path></g></g></g></g></g></svg>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">
+                                                Age
+                                            </h5>
+                                            You have to be over 18 years of age with a valid driver’s license to drive with Careem.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span><svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="smartphone_icn" fill-rule="nonzero" stroke="#37B44E" fill="#37B44E"><g id="Mobile_ico" transform="translate(19.000000, 10.000000)"><g id="Group-29"><g id="noun_1150148_cc"><g id="Group"><path d="M5.55555556,0 C2.48738889,0 0,2.49015017 0,5.56173526 L0,42.2692047 C0,45.3407842 2.48738889,47.8309399 5.55555556,47.8309399 L24.4444444,47.8309399 C27.5126111,47.8309399 30,45.3407842 30,42.2692047 L30,5.56173526 C30,2.49015017 27.5126111,0 24.4444444,0 L5.55555556,0 Z M5.55555556,1.11234705 L24.4444444,1.11234705 C26.9162778,1.11234705 28.8888889,3.08714683 28.8888889,5.56173526 L1.11111111,5.56173526 C1.11111111,3.08714683 3.08372222,1.11234705 5.55555556,1.11234705 Z M1.11111111,6.67408231 L28.8888889,6.67408231 L28.8888889,38.9321635 L1.11111111,38.9321635 L1.11111111,6.67408231 Z M1.11111111,40.0445106 L28.8888889,40.0445106 L28.8888889,42.2692047 C28.8888889,44.7437875 26.9162778,46.7185929 24.4444444,46.7185929 L5.55555556,46.7185929 C3.08372222,46.7185929 1.11111111,44.7437875 1.11111111,42.2692047 L1.11111111,40.0445106 Z M11.1111111,42.8253782 C10.8042778,42.8253782 10.5555556,43.0743771 10.5555556,43.3815517 C10.5555556,43.6887264 10.8042778,43.9377253 11.1111111,43.9377253 L18.8888889,43.9377253 C19.1957222,43.9377253 19.4444444,43.6887264 19.4444444,43.3815517 C19.4444444,43.0743771 19.1957222,42.8253782 18.8888889,42.8253782 L11.1111111,42.8253782 Z" id="Shape"></path></g></g></g></g></g></g></svg></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">
+                                                Smartphone
+                                            </h5>
+                                            You will need an Android device to receive bookings on our app.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="car_icn" fill-rule="nonzero" fill="#37B44E"><g id="Car_ico" transform="translate(9.000000, 13.000000)"><g id="noun_773618_cc"><path d="M11.2669134,29.3832715 L15.8033772,29.3832715 C17.2832462,29.393367 18.537284,28.1668958 18.7258948,26.5249973 C18.9145056,24.8830989 17.9784082,23.3418287 16.544333,22.9330886 L12.0078691,21.6080948 C11.129412,21.3492462 10.1933036,21.5610634 9.47385169,22.1814774 C8.75439977,22.8018915 8.33307328,23.7606483 8.33333345,24.7768035 L8.33333345,26.1017973 C8.33333345,27.9141054 9.64674193,29.3832715 11.2669134,29.3832715 L11.2669134,29.3832715 Z M10.4166667,24.734277 C10.4167541,24.398065 10.5452977,24.080911 10.764677,23.8756356 C10.9840563,23.6703602 11.2694646,23.6001751 11.5373725,23.6856213 L15.9806993,25.0938161 C16.4249642,25.2226821 16.7176415,25.7374623 16.6592679,26.2873275 C16.6008943,26.8371926 16.2102637,27.2451079 15.753596,27.2330739 L11.3102691,27.2330739 C10.817868,27.229799 10.4193648,26.7461158 10.4166667,26.1484642 L10.4166667,24.734277 Z M37.9921819,21.6080942 L33.4557812,22.9330812 C32.0207231,23.3420193 31.0844291,24.8849703 31.2744296,26.5278051 C31.4644302,28.17064 32.7209211,29.3962643 34.2017671,29.3832303 L38.7381678,29.3832303 C40.3543823,29.3801267 41.6638919,27.9153092 41.6666665,26.1074116 L41.6666665,24.7767864 C41.6669267,23.7606365 41.2456061,22.8018847 40.5261642,22.1814739 C39.8067223,21.561063 38.8706269,21.349247 37.9921819,21.6080942 L37.9921819,21.6080942 Z M39.2327968,23.877687 C39.4547085,24.0826181 39.584494,24.4020804 39.5833255,24.7405008 L39.5833255,26.1485649 C39.5806274,26.7461611 39.1821246,27.2297993 38.6897242,27.2330739 L34.2464029,27.2330739 C33.7897357,27.2451068 33.3991057,26.8372294 33.3407321,26.2874153 C33.2823586,25.7376012 33.5750355,25.2228688 34.0192998,25.0940147 L38.4626211,23.6859506 C38.5367487,23.6622594 38.6130696,23.6501778 38.6897242,23.65 C38.8865282,23.6508198 39.0775406,23.7309031 39.2327968,23.877687 Z M11.4148972,17.1999995 L37.87038,17.1999995 C38.2079216,17.2003419 38.5236554,17.0253035 38.7132354,16.7327321 C38.9028154,16.4401607 38.9415629,16.0681421 38.8166723,15.7396238 C37.9568691,13.4637828 36.2728759,9.26387009 35.4079851,7.96871935 C34.7872988,7.03599762 33.8817072,6.54032265 32.3249038,6.25251138 C29.7827726,5.85300122 27.2125204,5.68359705 24.6426386,5.74617673 C22.0796911,5.68337222 19.5163242,5.85098817 16.9807238,6.24718154 C15.4086576,6.53499281 14.5183289,7.03066779 13.8976425,7.96871935 C13.0378393,9.26387009 11.3538461,13.4637828 10.4889553,15.7396238 C10.3653191,16.06466 10.4018171,16.4325643 10.5866123,16.7240194 C10.7714075,17.0154745 11.0809676,17.1933655 11.4148972,17.1999995 Z M15.8281692,9.22007125 C15.9821882,8.98602302 16.2183506,8.63495066 17.6096555,8.3849446 C20.0560591,8.00444277 22.5293184,7.84072543 25.002567,7.89557102 C27.4702519,7.83593901 29.9383529,7.99431737 32.3800766,8.36898676 C33.7662475,8.61899283 34.0024099,8.97006518 34.1564289,9.19879414 C35.1726028,11.0814652 36.0578908,13.0368274 36.8055556,15.05 L13.1944444,15.05 C13.9429708,13.0389253 14.8282345,11.0853943 15.8435711,9.20411342 L15.8281692,9.22007125 Z M2.96428571,20.4170309 C2.06721617,22.2705792 1.62149582,24.3363303 1.66836735,26.4231397 L1.66836735,39.2325318 C1.67117733,41.3120001 3.24567289,42.9969928 5.18877551,43 L8.41836735,43 C10.36147,42.9969928 11.9359655,41.3120001 11.9387755,39.2325318 L11.9387755,38.3152351 L38.0612245,38.3152351 L38.0612245,39.2325318 C38.0640345,41.3120001 39.63853,42.9969928 41.5816327,43 L44.8163265,43 C46.7594291,42.9969928 48.3339247,41.3120001 48.3367347,39.2325318 L48.3367347,26.4559003 C48.3822863,24.3692349 47.9366406,22.3038296 47.0408163,20.4497915 C48.735074,20.1344384 49.9787572,18.5717029 50,16.7314642 C50,15.9670503 50,15.3445991 50,14.7658286 L50,14.7658286 C49.9545323,12.7641123 48.4519382,11.1512668 46.5816327,11.0966421 C46.2653061,11.0966421 45.9438776,11.0966421 45.6122449,11.0966421 C44.7886218,11.1146636 43.9834664,11.3611211 43.2755102,11.8119151 C42.4081633,9.57873462 41.0255102,6.2098536 40.0357143,4.6810259 C38.1479592,1.78171339 35.4438776,0.979078847 33.5918367,0.629632517 C30.7502056,0.156014999 27.8752829,-0.0504370081 25,0.0126413413 C22.131967,-0.0545802343 19.2639276,0.146386927 16.4285714,0.613252221 C14.5663265,0.96269855 11.8673469,1.75987299 9.97959184,4.66464561 C8.98979592,6.1934733 7.60714286,9.57873462 6.73979592,11.7955348 C6.0283812,11.3440805 5.21978143,11.0976448 4.39285714,11.0802618 C4.07142857,11.0802618 3.75510204,11.0802618 3.43877551,11.0802618 C1.55470982,11.1237611 0.0378534063,12.749478 0,14.7658286 C0,15.3118385 0,15.9615902 0,16.7314642 C0.0362459148,18.5610045 1.27916106,20.1063504 2.96428571,20.4170309 Z M2.08333333,14.8048875 C2.08331376,13.944152 2.72921752,13.2446951 3.52962962,13.2386759 L4.40555554,13.2386759 C5.20649311,13.2861738 5.96046588,13.6602277 6.51388886,14.2846424 C6.7589715,14.5311509 7.1012454,14.6320211 7.42895587,14.554318 C7.75666633,14.4766149 8.02775278,14.2303116 8.15370367,13.8958276 C9.57453699,10.1007766 10.924074,7.02311609 11.6726851,5.86762434 C13.1037036,3.67711867 15.1560184,3.01996696 16.7652777,2.71329617 C19.4801053,2.2757491 22.225137,2.09251881 24.9694443,2.16566975 C27.7137521,2.0924912 30.458786,2.27572164 33.1736109,2.71329617 C34.8032405,3.01996696 36.8555553,3.65521361 38.2662035,5.86762434 C39.0148146,7.02859235 40.3643516,10.1007766 41.7851849,13.8958276 C41.9111358,14.2303116 42.1822223,14.4766149 42.5099327,14.554318 C42.8376432,14.6320211 43.1799171,14.5311509 43.4249998,14.2846424 C43.9743338,13.6635421 44.7223674,13.2897259 45.5180553,13.2386759 L46.409259,13.2386759 C46.8042878,13.223814 47.1879692,13.3822405 47.4722281,13.6775884 C47.756487,13.9729363 47.9169081,14.3798377 47.9166664,14.8048875 C47.9166664,15.3525139 47.9166664,15.9001403 47.9166664,16.6449123 C47.9166664,17.5522494 47.232657,18.2877915 46.3888886,18.2877915 L45.3296294,18.2877915 L45.1870368,18.2877915 C44.8012504,18.2877915 44.448575,18.5221782 44.2760461,18.8932324 C44.1035172,19.2642866 44.1407502,19.7083151 44.372222,20.0401961 C44.4876541,20.204484 44.5979936,20.3705973 44.7032405,20.5385361 C45.7640277,22.2869376 46.2975346,24.3446116 46.2310183,26.4309964 L46.2310183,39.2618834 C46.2310183,40.138976 45.5698092,40.85 44.7541664,40.85 L41.5509257,40.85 C40.7352829,40.85 40.0740738,40.138976 40.0740738,39.2618834 L40.0740738,37.2466182 C40.0740738,36.6417267 39.6180676,36.1513653 39.0555553,36.1513653 L10.9444444,36.1513653 C10.3819321,36.1513653 9.92592588,36.6417267 9.92592588,37.2466182 L9.92592588,39.2618834 C9.92592588,39.6830781 9.77032944,40.0870218 9.49336599,40.3848514 C9.21640254,40.6826811 8.8407595,40.85 8.44907404,40.85 L5.21527776,40.85 C4.8235923,40.85 4.44794925,40.6826811 4.17098581,40.3848514 C3.89402236,40.0870218 3.73842592,39.6830781 3.73842592,39.2618834 L3.73842592,26.4145676 C3.67513076,24.3354565 4.20854461,22.2857897 5.26620368,20.5440124 C5.3714506,20.3760736 5.4817901,20.2099603 5.5972222,20.0456723 C5.82869401,19.7137914 5.86592695,19.2697628 5.69339804,18.8987087 C5.52086914,18.5276545 5.16819374,18.2932678 4.78240739,18.2932678 L4.6398148,18.2932678 L3.6111111,18.276839 C2.76734274,18.276839 2.08333333,17.5412969 2.08333333,16.6339597 C2.08333333,15.9165691 2.08333333,15.3306089 2.08333333,14.8048875 Z" id="Shape"></path></g></g></g></g></svg>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">
+                                                Car
+                                            </h5>
+                                            Depending on the city you want to work in, your car must meet some requirements.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="screening_icn" stroke-width="0.5" stroke="#F2F4F7" fill="#37B44E" fill-rule="nonzero"><g id="Screening_ico" transform="translate(11.000000, 9.000000)"><g id="Group-30"><g id="noun_1008079_cc-copy"><path d="M9.50400407,12.0853169 C9.85015926,12.140834 10.2003427,12.1684157 10.55106,12.1677868 C12.3689214,12.1640692 14.0930075,11.3729052 15.2648909,10.0046619 C16.4367744,8.63641862 16.9376932,6.82975781 16.6344552,5.06506295 C16.1878204,2.51939656 14.1628007,0.525672399 11.5771749,0.0859401206 C9.60210513,-0.244164843 7.58699975,0.38833766 6.1704339,1.78301127 C4.75386805,3.17768487 4.11143713,5.16164791 4.44672376,7.10619404 C4.89335853,9.65186043 6.91837826,11.6455846 9.50400407,12.0853169 Z M8.02241988,3.60637583 C8.68789586,2.94485854 9.5949122,2.57354923 10.5405895,2.57550153 C10.7458461,2.57632564 10.9506956,2.59356356 11.1531172,2.62704525 C12.7705684,2.9085044 13.9833976,4.2415016 14.0902682,5.85521135 C14.1971389,7.46892111 13.1703911,8.94568906 11.6037571,9.43155216 C10.0371231,9.91741526 8.33607327,9.28662421 7.484265,7.90394334 C6.63245673,6.52126248 6.85035188,4.7445521 8.01194932,3.60122145 L8.02241988,3.60637583 Z M1.43643786,15.2964903 C0.358617102,16.4884238 -0.150085272,18.0772329 0.0386181515,19.6622429 L1.29508531,29.0122727 C1.47429921,30.5776863 2.40752939,31.9626114 3.80278434,32.7337289 L5.83407291,47.3772982 C6.00700733,48.8685351 7.2884621,49.9949296 8.81294713,49.9957189 L12.2734671,49.9957189 C13.7835633,49.9994454 15.0593399,48.8937586 15.247106,47.4185332 L17.2783946,32.7337289 C18.6698742,31.9670558 19.6013069,30.5876619 19.7808584,29.0277359 L21.0477961,19.6313167 C21.2249226,18.0567889 20.7129376,16.4824652 19.6398746,15.3020413 C18.5668116,14.1216174 17.0341277,13.4467012 15.4251055,13.4460709 L13.8283452,13.4460709 C13.3658079,13.4446538 12.9280213,13.6516197 12.6399367,14.0078974 L10.5458248,16.5850832 L8.45171282,14.0078974 C8.16686716,13.64917 7.7310186,13.4384111 7.26853958,13.4357622 L5.6560734,13.4357622 C4.04488678,13.4375508 2.51056194,14.1141404 1.43643786,15.2964903 Z M3.38919724,17.012896 C3.96419557,16.3719532 4.79274893,16.0073099 5.66130868,16.0129479 L6.70836464,16.0129479 L9.04853472,18.8839328 C9.30217113,19.1967881 9.68908043,19.3758252 10.0955907,19.3684437 L11.0012941,19.3684437 C11.4078044,19.3758252 11.7947137,19.1967881 12.0483501,18.8839328 L14.3832849,16.0129479 L15.4303408,16.0129479 C16.2939419,16.0137882 17.11647,16.3760152 17.6927528,17.0092744 C18.2690356,17.6425337 18.5447412,18.4871216 18.4510973,19.3323631 L17.1841596,28.7236279 C17.0889926,29.6083375 16.4925093,30.3633924 15.6449873,30.6719803 C15.1925759,30.8364684 14.8686992,31.2325818 14.8021072,31.7028546 L12.6504072,47.0886534 C12.6291806,47.2782558 12.4672062,47.4222228 12.2734671,47.4236876 L8.81294713,47.4236876 C8.60892886,47.4212659 8.44178569,47.2634686 8.4307717,47.0628816 L6.30001282,31.7028546 C6.23248286,31.2313432 5.90634778,30.8349298 5.45189749,30.6719803 C4.58735192,30.3676218 3.97670499,29.6020815 3.88131354,28.7030104 L2.63531694,19.3323631 C2.53677419,18.4885077 2.81136986,17.6436579 3.38919724,17.012896 Z M32.0680601,47.346372 C44.7060256,42.8156795 44.5123202,32.9141319 44.339556,24.1517005 C44.339556,23.6362633 44.339556,23.1620611 44.339556,22.6775502 C39.418393,22.4610666 35.4762273,20.9920707 32.0942365,18.1056227 C30.2435177,19.7029684 28.0832605,20.9145663 25.7438421,21.6672934 C25.297762,21.817634 24.8040271,21.7201333 24.4513379,21.4120552 C24.0986488,21.1039771 23.9415231,20.6329434 24.0400128,20.1789786 C24.1385025,19.7250139 24.4773834,19.3582906 24.9271384,19.218967 C27.2813967,18.4539129 29.4218069,17.1584513 31.1780625,15.4356583 C31.6863441,14.9478791 32.4968936,14.9478791 33.0051752,15.4356583 C36.3243426,18.6107511 40.3398022,20.1055189 45.6169643,20.1055189 C46.3398056,20.1055189 46.9257842,20.6824415 46.9257842,21.3941117 C46.9257842,22.2548918 46.9257842,23.1569068 46.9624312,24.0795393 C47.1299601,32.8419707 47.3655477,44.8568106 32.5025883,49.9287121 C32.2245347,50.0237626 31.922056,50.0237626 31.6440024,49.9287121 C25.6339012,47.8824266 21.6236769,44.5887833 19.3725065,39.8364528 C19.1742457,39.4193577 19.2170555,38.9298096 19.4848101,38.5522166 C19.7525646,38.1746236 20.2045856,37.9663511 20.670601,38.0058532 C21.1366164,38.0453554 21.5458275,38.3266309 21.7440883,38.743726 C23.628789,42.7125921 27.0055445,45.5320333 32.0680601,47.346372 Z M26.5919574,33.9037712 C26.18367,33.6752244 25.9310646,33.248814 25.930032,32.7864088 C25.9289995,32.3240036 26.1796983,31.8965038 26.5869611,31.6661918 C26.9942239,31.4358797 27.4956054,31.4380689 27.9007774,31.6719284 C28.8506664,32.216685 29.7017119,32.9134776 30.418947,33.733677 C32.0688324,31.7090532 34.0086895,29.9311308 36.1777548,28.4556006 C36.753376,28.206581 37.4275136,28.3957265 37.783332,28.9060839 C38.1391504,29.4164414 38.0760984,30.1037881 37.6331625,30.5431211 C35.2275687,32.1929066 33.1407913,34.2526706 31.4712382,36.6252794 C31.2265402,36.9707558 30.8257995,37.1766903 30.3980058,37.1767971 L30.3404178,37.1767971 C29.8906958,37.1597591 29.4814094,36.9164251 29.2567148,36.5325007 C28.6183922,35.4410322 27.6993037,34.53437 26.5919574,33.9037712 L26.5919574,33.9037712 Z" id="Shape"></path></g></g></g></g></g></svg>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">
+                                                Screening
+                                            </h5>
+                                            The screening process may include drug tests, police reports, credit checks etc.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="capt">
+                <div class="container">
+                    <h4>Have you got what it takes to be a Careem Captain?</h4>
+                    <div>
+                        <span>
+                            <a class="btn btn-success scrollToTop"> Sign up now </a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="get-started">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h2>How to get started</h2>
+                            <div class="get-started-step">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="badge">1</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Register
+                                        </h5>
+                                        Complete the form at the top and apply to become a Careem Captain.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="get-started-step">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="badge">2</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">	
+                                            Train
+                                        </h5>
+                                        After reviewing your application we’ll invite you for a training session.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="get-started-step">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="badge">3</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Ride
+                                        </h5>
+                                        When training is complete, you can start to earn money!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <img src="https://drive.careem.com/assets/images/landing/section5.jpg" style="margin-top:74px" class="cap-landing" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="container">
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="slider-txt">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h2>How Careem works</h2>
+                                        <ol class="carousel-indicators visible-lg">
+                                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span>1</span></li>
+                                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">2</li>
+                                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">3</li>
+                                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">4</li>
+                                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">5</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-6 visible-lg">
+                                            <div class="second-col">
+                                                <h5>Download and sign in</h5>
+                                                <p>Once you have completed the training and you are a certified Captain, 
+                                                    you will download the driving app and sign in with your unique credentials</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="first-col">
+                                                <div class="slider-wrapper">
+                                                    <img src="https://drive.careem.com/assets/images/landing/section6_1.jpg" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hidden-lg">
+                                            <div class="second-col">
+                                                <h5>Download and sign in</h5>
+                                                <p>Once you have completed the training and you are a certified Captain, 
+                                                    you will download the driving app and sign in with your unique credentials</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6 visible-lg">
+                                            <div class="second-col">
+                                                <h5>Receive ride bookings</h5>
+                                                <p>Once in the app, tap on "Go Online". You are now ready to receive bookings! When you get a ride booking, 
+                                                    you'll see the pickup location and choose to accept or reject it based on your availability.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="first-col">
+                                                <div class="slider-wrapper">
+                                                    <img src="https://drive.careem.com/assets/images/landing/section6_2.jpg" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hidden-lg">
+                                            <div class="second-col">
+                                                <h5>Receive ride bookings</h5>
+                                                <p>Once in the app, tap on "Go Online". You are now ready to receive bookings! When you get a ride booking, 
+                                                    you'll see the pickup location and choose to accept or reject it based on your availability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6 visible-lg">
+                                            <div class="second-col">
+                                                <h5>Pick up customers</h5>
+                                                <p>If you have accepted a booking, the app will guide you to the pick-up location. 
+                                                    Tap "Arrived for pickup" when you have reached the Customer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="first-col">
+                                                <div class="slider-wrapper">
+                                                    <img src="https://drive.careem.com/assets/images/landing/section6_3.jpg" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hidden-lg">
+                                            <div class="second-col">
+                                                <h5>Pick up customers</h5>
+                                                <p>If you have accepted a booking, the app will guide you to the pick-up location. 
+                                                    Tap "Arrived for pickup" when you have reached the Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6 visible-lg">
+                                            <div class="second-col">
+                                                <h5>Complete the ride</h5>
+                                                <p>The app supports Google navigation to guide you to the Customer’s destination. 
+                                                    The customer could also guide you to the destination.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="first-col">
+                                                <div class="slider-wrapper">
+                                                    <img src="https://drive.careem.com/assets/images/landing/section6_4.jpg" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hidden-lg">
+                                            <div class="second-col">
+                                                <h5>Complete the ride</h5>
+                                                <p>The app supports Google navigation to guide you to the Customer’s destination. 
+                                                    The customer could also guide you to the destination.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6 visible-lg">
+                                            <div class="second-col">
+                                                <h5>Earn money</h5>
+                                                <p>Yay! Once you have dropped off the Customer your ride is complete and your earnings are reflected directly in the Captain Portal. 
+                                                    You can collect cash for some rides, while for card or wallet-based payments, Careem will pay you for the ride.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="first-col">
+                                                <div class="slider-wrapper">
+                                                    <img src="https://drive.careem.com/assets/images/landing/section6_5.jpg" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hidden-lg">
+                                            <div class="second-col">
+                                                <h5>Earn money</h5>
+                                                <p>Yay! Once you have dropped off the Customer your ride is complete and your earnings are reflected directly in the Captain Portal. 
+                                                    You can collect cash for some rides, while for card or wallet-based payments, Careem will pay you for the ride.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators hidden-lg">
+                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</li>
+                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">2</li>
+                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">3</li>
+                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">4</li>
+                                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5" style="margin: 0 !important;">5</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="container">
+                    <h3 class="text-center">Frequently Asked Questions</h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-q">
+                                <h5>What documents will you need from me?</h5>
+                                <p>Documents required include but are not limited to: 
+                                    Driving license, national ID card, vehicle registration documents, insurance, recent profile picture.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-q">
+                                <h5>How does the car inspection work?</h5>
+                                <p>The car inspection varies by market. We will either do the car check ourselves (by the city teams) 
+                                    or use 3rd party services that do the car check for us like Nacita in Egypt and CarSure in Pakistan.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-q">
+                                <h5>When can I start driving?</h5>
+                                <p>Once activated, use your new credentials to log in to the Careem Captain app (ADMA) and start earning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="container">
+                    <div class="waper">
+                        <nav class="nav-footer">
+                            <a href="#">
+                                <img class="footer-logo_img" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                            </a>
+                            <a href="#">Products</a>
+                            <a href="#">Safety</a>
+                            <a href="#">Help</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Careers</a>
+                        </nav>
+                        <div class="social-media-link">
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/facebook.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/twitter.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/linkedin.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bottom">
+                        <nav class="bottom-navigation">
+                            <a href="/terms.html">Terms of Service</a>
+                            <a href="#">Privacy Policy</a>
+                        </nav>
+                        <div class="copy-right">
+                            <a href="#">
+                                <img class="footer-logo_hidden d-lg-none" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
+                            </a>
+                            <p>All rights reserved. Careem, an Uber company © 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

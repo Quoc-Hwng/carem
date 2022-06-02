@@ -1,0 +1,159 @@
+.banner-large{
+    height: 600px;
+}
+.featured-banner{
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.featured-banner .banner-img{
+    background-image: url("https://www.careem.com/pubweb-v2/careem-for-business/images/business-bg-ar.jpg");
+    height: 600px;
+}
+.register-form{
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+}
+.register-form h2{
+    font-size: 24px;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+.signup-form-group{
+    margin-bottom: 10px;
+}
+.flag-container .intl-tel-input{
+    margin-bottom: 10px;
+    display:block;
+}
+.intl-tel-input input::placeholder{
+    color:#afb1b3; 
+}
+.flaginput{
+    height: 48px!important;
+}
+select {
+    color: #cacaca;
+}
+option:not(:first-of-type) {
+    color: #000;
+}
+.form-content{
+    margin-bottom: 20px;
+}
+.fixd-btn{
+    margin-bottom: 0;
+}
+.fixd-btn .btn{
+    max-width: 100%;
+    height: auto;
+}
+.btn-primary{
+    padding: 12px 50px;
+    font-size: 1rem
+}
+@media screen and (max-width: 992px){
+    .featured-banner{
+        margin-top: 0;
+    }    
+}
+@media screen and (max-width: 576px){
+    .banner-large{
+        height: 740px;
+    }
+    .banner-caption h1{
+        font-size: 34px;
+    }    
+    .banner-caption{
+        top: 10px;
+        transform: none;
+    }
+    .featured-banner .banner-img{
+        height: 740px;
+    }
+}
+/*  */
+.section-title{
+    font-weight: bold;
+}
+.story-card-body h5{
+    font-weight: bold;
+}
+
+/*  */
+.cover{
+    background-position: center;
+    background-size: cover;
+}
+.img-500-380{
+    height: 380px;
+    background-image: url("https://dummyimage.com/500x380/499d3a/fff");
+    background-position: center;
+}
+#section-2{
+    padding-top: 0;
+}
+#section-2 h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.btn-primary{
+    padding: 10px 30px;
+    font-size: 14px;
+}
+.ani-to-right-1, .ani-to-right-2,.ani-to-right-3, .ani-to-right-4, .ani-to-left-1, .ani-to-left-2, .ani-to-left-3, .ani-to-left-4{
+    opacity: 0;
+}
+.reveal.active .ani-to-right-1{
+    animation: moveToRight 2s forwards;
+}
+.reveal.active .ani-to-right-2{
+    animation: moveToRight 2s forwards;
+}
+.reveal.active .ani-to-right-3{
+    animation: moveToRight 2s forwards;
+}
+.reveal.active .ani-to-right-4{
+    animation: moveToRight 2s forwards;
+}
+@keyframes moveToRight {
+    from{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.reveal.active .ani-to-left-1{
+    animation: moveToLeft 2s forwards;
+}
+.reveal.active .ani-to-left-2{
+    animation: moveToLeft 2s forwards;
+}
+.reveal.active .ani-to-left-3{
+    animation: moveToLeft 2s forwards;
+}
+.reveal.active .ani-to-left-4{
+    animation: moveToLeft 2s forwards;
+}
+@keyframes moveToLeft{
+    from{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 576px){
+    .order-sm-1{
+        order: 1;
+    }
+    .order-sm-2{
+        order: 2;
+    }
+}
