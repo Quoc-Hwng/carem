@@ -1,5 +1,6 @@
+
+/* header */
 .header-container{
-    position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
@@ -30,7 +31,7 @@
 }
 .btn-login{
     background-color: var(--white);
-    border-color: var(--white)!important;
+    border-color: #fff!important;
     color: var(--secondary) !important;
     height: 42px;
     font-size: 14px;
@@ -100,24 +101,89 @@
         display: flex;
     }
 }
+
 .section{
-    padding: 80px 0;
-    min-height: 80px;
+    margin-bottom:60px;
 }
-.first-section{
-    margin: 50px;
-}
-.section-title{
+.hero{
+    background-image: url("https://theme.zdassets.com/theme_assets/276624/71f94da7eaf5e1be35468760cfdf1b7a1b35d790.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
     text-align: center;
-    margin-bottom: 40px;
-    line-height: 1.23;
-    color:#2d2e2e;
-    font-weight: bold;
+    width: 100%;
 }
-.section ol{
+.hero-inner{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin:0 auto;
+}
+.search{
+    position: relative;
+}
+/* .search::before{
+    content: "\1F50D";
+    font-size: 18px;
+    position: absolute;
+    color: #ddd;
+    background-color: #fff;
+    left: 15px;
+    font-family: "copenhagen-icons";
+    top: 50%;
+    transform: translateY(-50%);
+} */
+.search svg{
+    position: absolute;
+    color: #ddd;
+    background-color: #fff;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search input{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    color: #999;
+    height: 48px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.block-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 0;
+    margin: 0 -15px;
 }
-.section p{
-    color: #606c74;
-    
+.block-item{
+    border: 1px solid var(--secondary);
+    flex-direction: column;
+    display: flex;
+    margin: 0 15px 30px;
+    flex: 1 0 340px;
+    border-radius: 4px;
+}
+.block-item:hover{
+    color: #fff!important;
+    background-color: var(--secondary);
+}
+.block-item a:hover{
+    color: var(--white);
+}
+.block-item-link{
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 12px 24px;
+    text-align: center;
+}
+.block-item-title{
+    font-size: 16px;
+}
+footer{
+    margin-top: 64px;
 }

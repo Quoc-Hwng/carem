@@ -8,13 +8,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="logo/AziTask-11.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/now-insights.css">
-    <title>News Detail</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact</title>
 </head>
 <body>
     <header class="header-container">
         <div class="container">
-            <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+            <a href="index.html" class="logo-img"><img src="logo/logo-azi-white.png" style="height: 50px;" alt=""></a>
             <div class="login-sign">
                 <a href="agent.html" class="btn-login btn btn-light">
                     <span lass="d-lg-inline">Đăng ký đối tác</span>
@@ -24,7 +24,7 @@
                     <span>Sign Up</span>
                 </a> -->
             </div>
-            <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right" onclick="openNav()">
+            <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
                 <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
             </label>
         </div>
@@ -68,108 +68,119 @@
             <a href="question.html">Hỏi đáp</a>
             <a href="terms.html">Quy định</a>
             <a href="contact.html">Liên hệ</a>
-            <div class="region">
-                <input type="checkbox" name="" class="accordion__input" id="region">
-                <label for="region" class="show-according" style="font-size: 16px; display: flex;">
-                    <span><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">
-                    Tiếng Việt</span>
-                    <img class="rotote" src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
-                </label>
-                <ul class="according-menu">
-                    <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt=""class="mr-2" style="min-width: 16px; height: 16px;">
-                        Tiếng Việt</a></li>
-                    <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">Tiếng Anh</a></li>
-                </ul>
-            </div>
             <!-- <a href="#" style="font-size: 16px; display: flex;">
                 <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
                     English</a> -->
+                    <div class="region">
+                        <input type="checkbox" name="" class="accordion__input" id="region">
+                        <label for="region" class="show-according" style="font-size: 16px; display: flex;">
+                            <span><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">
+                            Tiếng Việt</span>
+                            <img class="rotote" src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                        </label>
+                        <ul class="according-menu">
+                            <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt=""class="mr-2" style="min-width: 16px; height: 16px;">
+                                Tiếng Việt</a></li>
+                            <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">Tiếng Anh</a></li>
+                        </ul>
+                    </div>
         </section>
         <label for="nav-input" class="nav__overplay"></label>
-        <section class="featured-banner">
-            <div class="banner-img"></div>
-            <div class="banner-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-10 col-8 col-lg-6">
-                            <h3>Our mission is to simplify and improve the lives of people, and build an awesome organisation that inspires.</h3>
+        <div class="container-divider"></div>
+        <div class="container">
+            <nav class="sub-nav">
+                <ol class="breadcrumbs">
+                    <li title="Careem">
+                        <a href="">Careem</a>
+                    </li>
+                    <li title="Submit a request">
+                        Submit a request
+                    </li>
+                </ol>
+                <form action="" type="search" class="contact-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z" fill="currentColor"></path></svg>
+                    <input type="search" id="query" placeholder="Search">
+                </form>
+            </nav>
+            <h1>Contact Us</h1>
+            <div class="form">
+                <form class="request-form" id="new-request" autocomplete="off" >
+                    <div class="form-field string required request_anonymous_requester_email">
+                        <label for="request_anonymous_requester_email">Your email address</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field string required request_anonymous_requester_phone">
+                        <label for="request_anonymous_requester_phone">Phone number</label>
+                        <input type="text">
+                        <p>Please include country code</p>
+                    </div>
+                    <div class="form-field string required request_anonymous_requester_service">
+                        <label for="request_anonymous_requester_service">Service</label>
+                        <select name="service" id="service" class="nesty-input">
+                            <option value="">-</option>
+                            <option value="car">Car</option>
+                            <option value="food">Food</option>
+                            <option value="shops">Shops</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="bike">Bike</option>
+                            <option value="other">Other service</option>
+                        </select>
+                    </div>
+                    <div class="form-field string required request_anonymous_requester_help">
+                        <label for="request_anonymous_requester_help">What can we help you with?</label>
+                        <select name="service" id="service" class="nesty-input">
+                            <option value="">-</option>
+                            <option value="account_issue">Account issue</option>
+                            <option value="help_center_app_feedback">App feedback</option>
+                            <option value="help_center_captain_feedback">Captain feedback</option>
+                            <option value="help_center_dispute_trip_order">Dispute trip/order</option>
+                            <option value="help_center_general_inquiry">General inquiry</option>
+                            <option value="help_center_lost_item">Lost item</option>
+                            <option value="help_center_other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field string required request_description">
+                        <label for="request_description">Description</label>
+                        <textarea name="request[description]"></textarea>
+                        <p>Please enter the details of your request. A member of our support staff will respond as soon as possible.</p>
+                    </div>
+                    <div class="form-field string required request_anonymous_requester_help">
+                        <label for="request_anonymous_requester_help">Country</label>
+                        <select name="service" id="service" class="nesty-input">
+                            <option value="">-</option>
+                            <option value="account_issue">Vietnam</option>
+                            <option value="help_center_app_feedback">American</option>
+                            <option value="help_center_captain_feedback">China</option>
+                            <option value="help_center_dispute_trip_order">Japan</option>
+                            <option value="help_center_general_inquiry">Korea</option>
+                            <option value="help_center_lost_item">England</option>
+                        </select>
+                    </div>
+                    <div class="form-field string required request_anonymous_requester_help">
+                        <label for="request_anonymous_requester_help">Are you a Captain?</label>
+                        <select name="service" id="service" class="nesty-input">
+                            <option value="">-</option>
+                            <option value="account_issue">Yes</option>
+                            <option value="help_center_app_feedback">No</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Attachments</label>
+                        <div class="upload-dropzone">
+                            <input type="file">
+                            <span>
+                                <a href="">Add file</a>
+                                or drop file here
+                            </span>
                         </div>
                     </div>
-                </div>
+                </form>
+                <footer>
+                    <button class="formsubmit">Submit
+                    </button>
+                </footer>
             </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Careem NOW data shows that healthy intentions falter as the week goes on</h1>
-                        <p>
-                            <br>
-                            <br>
-                            04.7.2019
-                            <br>Written by Careem NOW
-                            <br>
-                            <br>
-                            Careem NOW data shows that healthier options are second only to Arabic food when it comes to ordering food delivery, but healthy intentions falter as the week progresses.
-                            <br>
-                            <br>                          
-                            That people order more healthy food on the weekdays, compared to weekends, should come as no surprise, but Careem NOW data can reveal that our intentions to eat healthier food steadily diminishes throughout the week.
-                            <br>
-                            <br>
-                            The highest number of healthy cuisine orders are placed on Sunday, representing nearly one-in-five of the total orders with the Careem NOW app in Dubai. That number gradually decreases as the week goes on and by Friday just one-in-ten orders are from the healthier options available.
-                            <br>
-                            <br>
-                            But despite willpower to eat healthier sliding as the week goes on, healthier options are still the second-most ordered option overall. Arabic is the most-ordered cuisine, with one-in-four dishes requested for delivery coming from Arabic restaurants, but it seems Dubai is trying to eat healthier, even if willpower fades.
-                            <br>
-                            <br>
-                            American and Indian Cuisine orders go up on the weekends and people order more deserts at that time also.
-                            <br>
-                            <br>
-                            In Jeddah, Saudi Arabia – where Careem NOW also operates – fast food dominates the ordering every day of the week, representing over half of all food ordered. Arabic is a – perhaps surprising – distant second with healthier options third, representing just one-in-ten orders, dropping to one-in-20 at the weekend.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <footer id="footer">
-            <div class="container">
-                <div class="waper">
-                    <nav class="nav-footer">
-                        <a href="#" class="d-none">
-                            <img class="footer-logo_img" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
-                        </a>
-                        <a href="#">Products</a>
-                        <a href="#">Safety</a>
-                        <a href="#">Help</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                    </nav>
-                    <div class="social-media-link">
-                        <a href="#">
-                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/facebook.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/twitter.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/linkedin.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div id="bottom">
-                    <nav class="bottom-navigation">
-                        <a href="/terms.html">Terms of Service</a>
-                        <a href="#">Privacy Policy</a>
-                    </nav>
-                    <div class="copy-right">
-                        <a href="#">
-                            <img class="footer-logo_hidden d-lg-none" src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt="" width="110px">
-                        </a>
-                        <p>All rights reserved. Careem, an Uber company © 2021</p>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
+        </div>
         <footer id="footer">
             <section class="section-small footer-top bg-azi-primary">
                 <div class="container">

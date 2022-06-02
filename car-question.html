@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/AziTask-11.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car-question.css">
+    <title>Car</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container">
+            <a href="index.html" class="logo-img"><img src="logo/logo-azi-white.png" style="height: 50px;" alt=""></a>
+            <div class="login-sign">
+                <a class="btn-login btn btn-light">
+                    <span lass="d-lg-inline">Đăng ký đối tác</span>
+                </a>
+                <!-- <a class="btn-signup btn">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
+                    <span>Sign Up</span>
+                </a> -->
+            </div>
+            <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
+                <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
+            </label>
+        </div>
+    </header>
+    <main>
+        <input type="checkbox" name="" id="nav-input">
+        <section id="mySidenav" class="sidenav">
+            <label for="nav-input" class="closebtn">&times;</label>
+            <a href="index.html">Trang chủ</a>
+            <!-- <div>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="show-according" style="display: flex ">
+                    Products
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="ride.html"><p>Ride with us</p></a>
+                    <a href="drive.html"><p>   Drive with us</p></a>
+                    <a href=""><p>   Order with us</p></a>
+                    <a href=""><p>   Careem Express</p></a>
+                    <a href=""><p>    Careem Pay</p></a>
+                    <a href="business.html"><p>   Careem For Business</p></a>
+                    <p>   Careem Plus</p>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="show-according" style=" display: flex ">
+                    More for you
+                    <img src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <div class="according-menu">
+                    <a href="packages.html"><p>Packages</p></a>
+                    <a href="rewards.html"><p>  Careem Rewards</p></a>
+                </div>
+            </div> -->
+            <a href="our-story.html">Chúng tôi</a>
+            <a href="how-to-work.html">Hướng dẫn</a>
+            <a href="agent.html">Đối tác</a>
+            <a href="news.html">Tin tức</a>
+            <a href="question.html">Hỏi đáp</a>
+            <a href="terms.html">Quy định</a>
+            <a href="contact.html">Liên hệ</a>
+            <!-- <a href="#" style="font-size: 16px; display: flex;">
+                <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
+                    English</a> -->
+                    <div class="region">
+                        <input type="checkbox" name="" class="accordion__input" id="region">
+                        <label for="region" class="show-according" style="font-size: 16px; display: flex;">
+                            <span><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">
+                            Tiếng Việt</span>
+                            <img class="rotote" src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                        </label>
+                        <ul class="according-menu">
+                            <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt=""class="mr-2" style="min-width: 16px; height: 16px;">
+                                Tiếng Việt</a></li>
+                            <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">Tiếng Anh</a></li>
+                        </ul>
+                    </div>
+        </section>
+        <label for="nav-input" class="nav__overplay"></label>
+        <div class="container-divider"></div>
+        <div class="container">
+            <nav class="sub-nav">
+                <ol class="breadcrumbs">
+                    <li title="Careem">
+                        <a href="">Careem</a>
+                    </li>
+                    <li title="Submit a request">
+                        Car
+                    </li>
+                </ol>
+                <form action="" type="search" class="contact-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z" fill="currentColor"></path></svg>
+                    <input type="search" id="query" placeholder="Search">
+                </form>
+            </nav>
+            <div class="category-container">
+                <div class="category-content">
+                    <header class="page-header">
+                        <h1>Car</h1>
+                    </header>
+                    <div class="section-tree">
+                        <section class="section">
+                            <h3 class="section-tree-title">About Car rides</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">What are Car rides?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Locations and availability</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Car types</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">What are Careem's rates?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Careem's in-ride policies</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Downloading Careem app</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Sign up and manage account</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Creating an account</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">What if I didn’t receive a verification code?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Editing account details</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Unlink Facebook account</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">I forgot my password</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Business profile</a>
+                                </li>
+                            </ul>
+                            <a href="">See all 9 articles</a>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Requesting a ride</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Types of bookings</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Booking a ride from Careem app</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Booking a ride from Careem website</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Selecting payment method</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Applying a promo code</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Peak pricing</a>
+                                </li>
+                            </ul>
+                            <a href="">See all 12 articles</a>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Cancelling a ride</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">How to cancel a ride?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Cancellation policy</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">How long should my Captain wait for me?</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Taking a ride</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Updating booking details</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Contacting Captain</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Sharing ride details</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">After a ride</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Viewing my rides</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Rating my Captain</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Tipping my Captain</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">What is Customer rating?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Reporting lost item</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Payments options and billing</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Payment options</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Cash payments and policy</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Adding and removing a credit/debit card</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Rides pre-authorisation (Card verification before a ride)</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Careem Pay credit</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Careem Packages</a>
+                                </li>
+                            </ul>
+                            <a href="">See all 12 articles</a>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Careem Rewards</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Careem Rewards</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Earning Careem Reward points</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Redeeming Reward points</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Do Careem Reward points expire?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Careem Gold</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="section">
+                            <h3 class="section-tree-title">Contacting Careem</h3>
+                            <ul class="article-list">
+                                <li class="article-list-item">
+                                    <a href="">Contacting Careem</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Contacting Captain anonymously (Call masking)</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">My Notifications</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">Support Inbox</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">How do I submit a Subject Access Request (SAR GDPR)?</a>
+                                </li>
+                                <li class="article-list-item">
+                                    <a href="">How do I contact Careem for partnerships?</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+    </main>
+    <footer id="footer">
+        <section class="section-small footer-top bg-azi-primary">
+            <div class="container">
+                <div class="row align-items-center justify-content-xs-center">
+                    <div class="col-sm-12 col-md-3 col-lg-2 text-center mb-4">
+                        <a href="">
+                            <img class="brand-footer-logo" src="logo/logo-azi-white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2 text-center mb-4 clickable">
+                        <div class="dropdown-list">
+                            <span id="selected-language">English</span>
+                            <span class="caret-down inline-block"></span>
+                        </div>
+                        <div class="language-list">
+                            <div class="dropdown-list__item"><a href="">English</a></div>
+                            <div class="dropdown-list__item"><a href="">Vietnamese</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4">
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Service</a>
+                        </li>
+                        <div class="item-vertical-devider"></div>
+                        <li class="list-inline-item">
+                            <a href="#"> Privacy Policy</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-4 azi-btn-group">
+                        <a href="" class="mb-4 inline-block">
+                            <img src="https://www.careem.com/pubweb-v2/images/google_play.png" alt="">
+                        </a>
+                        <a href="" class="mb-4 inline-block">
+                            <img src="https://www.careem.com/pubweb-v2/images/app_store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-tiny footer-bottom bg-azi-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 order-xs-2">
+                        <div class="copyright">
+                            <p>All rights reserved. Careem, an Uber company © 2021</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 order-xs-1">
+                        <ul class="list-inline social-links-inline text-right ar-text-left ar-text-sm-center m-0 p-0">
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <img src="https://www.careem.com/pubweb-v2/images/facebook-light.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <img src="https://www.careem.com/pubweb-v2/images/twitter-light.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <img src="https://www.careem.com/pubweb-v2/images/linkedin-light.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <input type="checkbox" id="flybanner-input">
+    <div class="container-fluid c-flybanner">
+        <div class="row align-items-center">
+            <label for="flybanner-input" class="col-auto close pr-1">
+                <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/times.svg" alt="">
+            </label>
+            <img class="col-auto logo" src="logo/logo_azitask.svg" alt="">
+            <div class="px-1 col">
+                <h5 class="c-fly-banner__title">AziTask App</h5>
+                <p class="c-fly-banner__description">One app for every need</p>
+            </div>
+            <div class="col-auto">
+                <a href="">
+                    <button class="btn-small btn btn-azi col-12 ">Open</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

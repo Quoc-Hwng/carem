@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/main.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/AziTask-11.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/terms.css">
@@ -14,16 +15,15 @@
 <body>
     <header class="header-container">
         <div class="container">
-            <a href="index.html" class="logo-img"><img src="https://www.careem.com/pubweb-v2/super-app-v2/img/logo.svg" alt=""></a>
+            <a href="index.html" class="logo-img"><img src="logo/logo-azi-white.png" style="height: 50px;" alt=""></a>
             <div class="login-sign">
-                <a class="btn-login btn btn-light">
-                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/login.svg" alt="" style="margin-right: 5px;">
-                    <span lass="d-none d-lg-inline">Login</span>
+                <a href="agent.html" class="btn-login btn btn-light">
+                    <span lass="d-lg-inline">Đăng ký đối tác</span>
                 </a>
-                <a class="btn-signup btn">
+                <!-- <a class="btn-signup btn">
                     <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/user.svg" alt="" style="margin-right: 5px;">
                     <span>Sign Up</span>
-                </a>
+                </a> -->
             </div>
             <label for="nav-input" type="button" class="btn-menu-toggle nav-menu_slide navbar-toggler pull-right">
                 <img src="https://careem-web.s3-eu-west-1.amazonaws.com/public-assets/images/menu.svg" alt="">
@@ -34,8 +34,8 @@
         <input type="checkbox" name="" id="nav-input">
         <section id="mySidenav" class="sidenav">
             <label for="nav-input" class="closebtn">&times;</label>
-            <a href="#">About us</a>
-            <div>
+            <a href="index.html">Trang chủ</a>
+            <!-- <div>
                 <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
                 <label for="section1" class="show-according" style="display: flex ">
                     Products
@@ -61,13 +61,30 @@
                     <a href="packages.html"><p>Packages</p></a>
                     <a href="rewards.html"><p>  Careem Rewards</p></a>
                 </div>
+            </div> -->
+            <a href="our-story.html">Chúng tôi</a>
+            <a href="how-to-work.html">Hướng dẫn</a>
+            <a href="agent.html">Đối tác</a>
+            <a href="news.html">Tin tức</a>
+            <a href="question.html">Hỏi đáp</a>
+            <a href="terms.html">Quy định</a>
+            <a href="contact.html">Liên hệ</a>
+            <div class="region">
+                <input type="checkbox" name="" class="accordion__input" id="region">
+                <label for="region" class="show-according" style="font-size: 16px; display: flex;">
+                    <span><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">
+                    Tiếng Việt</span>
+                    <img class="rotote" src="https://www.careem.com/pubweb-v2/images/sort-down.svg" alt="">
+                </label>
+                <ul class="according-menu">
+                    <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/vn.svg" alt=""class="mr-2" style="min-width: 16px; height: 16px;">
+                        Tiếng Việt</a></li>
+                    <li><a href="#"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="" class="mr-2" style="min-width: 16px; height: 16px;">Tiếng Anh</a></li>
+                </ul>
             </div>
-            <a href="#">Safety</a>
-            <a href="#">Join the team</a>
-            <a href="#">Help</a>
-            <a href="#" style="font-size: 16px; display: flex;">
+           <!--  <a href="#" style="font-size: 16px; display: flex;">
                 <img src="https://www.careem.com/pubweb-v2/images/icon-globe.png" style="min-width: 16px; height: 16px;" alt="">
-                    English</a>
+                    English</a> -->
         </section>
         <label for="nav-input" class="nav__overplay"></label>
         <section class="section first-section">
@@ -287,7 +304,7 @@
                 </div>
             </div>
         </section>
-        <footer id="footer">
+        <!-- <footer id="footer">
             <div class="container">
                 <div class="waper">
                     <nav class="nav-footer">
@@ -325,7 +342,95 @@
                     </div>
                 </div>
             </div>
+        </footer> -->
+        <footer id="footer">
+            <section class="section-small footer-top bg-azi-primary">
+                <div class="container">
+                    <div class="row align-items-center justify-content-xs-center">
+                        <div class="col-sm-12 col-md-3 col-lg-2 text-center mb-4">
+                            <a href="">
+                                <img class="brand-footer-logo" src="logo/logo-azi-white.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-lg-2 text-center mb-4 clickable">
+                            <div class="dropdown-list">
+                                <span id="selected-language">English</span>
+                                <span class="caret-down inline-block"></span>
+                            </div>
+                            <div class="language-list">
+                                <div class="dropdown-list__item"><a href="">English</a></div>
+                                <div class="dropdown-list__item"><a href="">Vietnamese</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4">
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <div class="item-vertical-devider"></div>
+                            <li class="list-inline-item">
+                                <a href="#"> Privacy Policy</a>
+                            </li>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-4 azi-btn-group">
+                            <a href="" class="mb-4 inline-block">
+                                <img src="https://www.careem.com/pubweb-v2/images/google_play.png" alt="">
+                            </a>
+                            <a href="" class="mb-4 inline-block">
+                                <img src="https://www.careem.com/pubweb-v2/images/app_store.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tiny footer-bottom bg-azi-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 order-xs-2">
+                            <div class="copyright">
+                                <p>All rights reserved. Careem, an Uber company © 2021</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 order-xs-1">
+                            <ul class="list-inline social-links-inline text-right ar-text-left ar-text-sm-center m-0 p-0">
+                                <li class="list-inline-item">
+                                    <a href="">
+                                        <img src="https://www.careem.com/pubweb-v2/images/facebook-light.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">
+                                        <img src="https://www.careem.com/pubweb-v2/images/twitter-light.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">
+                                        <img src="https://www.careem.com/pubweb-v2/images/linkedin-light.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </footer>
+        <input type="checkbox" id="flybanner-input">
+        <div class="container-fluid c-flybanner">
+            <div class="row align-items-center">
+                <label for="flybanner-input" class="col-auto close pr-1">
+                    <img src="https://www.careem.com/pubweb-v2/super-app-v2/img/icons/times.svg" alt="">
+                </label>
+                <img class="col-auto logo" src="logo/logo_azitask.svg" alt="">
+                <div class="px-1 col">
+                    <h5 class="c-fly-banner__title">AziTask App</h5>
+                    <p class="c-fly-banner__description">One app for every need</p>
+                </div>
+                <div class="col-auto">
+                    <a href="">
+                        <button class="btn-small btn btn-azi col-12 ">Open</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
